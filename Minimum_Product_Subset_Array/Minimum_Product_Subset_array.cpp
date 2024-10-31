@@ -39,7 +39,7 @@ lint solve(lint temp[], lint num) {
     return prod;
 }
 
-int main(){
+int main() {
     lint num = 5;
     lint temp[num] = {5, -2, 4, -3, 1};
     for (lint i = 0; i < num; i++ ) {

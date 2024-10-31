@@ -17,7 +17,7 @@ The worst-case running time of the Rabin-Karp algorithm = O(nm).
 #define AN 256    // no. of character in alphabet
 using namespace std;
 
-void search(char *pattern, char *text, int PN)
+void search(const char *pattern, const char *text, int PN)
 {
     int patlen = strlen(pattern);   // pattern length
     int txtlen = strlen(text);      // text length
@@ -59,8 +59,8 @@ void search(char *pattern, char *text, int PN)
 }
 
 int main() {
-    char *text = "XWINGO XOR WINGO";
-    char *pattern = "WINGO";
+    const char *text = "XWINGO XOR WINGO";
+    const char *pattern = "WINGO";
     int PN = 101;  // A prime number
     search(pattern, text, PN);
     return 0;
