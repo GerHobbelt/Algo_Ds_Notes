@@ -42,7 +42,7 @@ void floodFill (int x, int y, int old, int newcol)
     }
 }
 
-void main ()
+int main()
 {
     int gd = DETECT, gm;
     int left, top, right, bottom;
@@ -67,6 +67,7 @@ void main ()
 
     getch ();
     closegraph ();
+		return 0;
 }
 
 // Sample input - https://imgur.com/css9qIj

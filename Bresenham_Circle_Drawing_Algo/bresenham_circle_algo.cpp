@@ -3,7 +3,7 @@
 
 using namespace std;
 
-void main()
+int main()
 {
     clrscr();
 
@@ -53,6 +53,7 @@ void main()
     }
     getch();
     closegraph();
+		return 0;
 }
 
 //sample output - https://ibb.co/FzJbVqT

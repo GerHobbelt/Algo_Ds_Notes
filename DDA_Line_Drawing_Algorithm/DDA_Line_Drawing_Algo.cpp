@@ -4,7 +4,7 @@
 
 using namespace std;
 
-void main()
+int main()
 {
     int gdriver = DETECT, gmode, errorcode;
     initgraph(&gdriver, &gmode, "");
@@ -40,6 +40,7 @@ void main()
     }
     getch();
     closegraph();
+		return 0;
 }
 
 //Sample output - https://ibb.co/3mqM8MK

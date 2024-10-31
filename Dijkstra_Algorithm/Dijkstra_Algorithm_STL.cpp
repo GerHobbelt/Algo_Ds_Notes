@@ -2,6 +2,8 @@
 
 #include "generic.h"
 
+#include <queue>
+
 using namespace std;
 
 //Dijkstra's Algorithm for single source shortest paths using STL
