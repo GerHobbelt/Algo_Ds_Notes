@@ -90,7 +90,7 @@ int main()
                      {1, 0, 5, 0} 
                     }; 
   
-    cout<< "Determinant of the matrix is :"<< determinantOfMatrix(mat, N)); 
+    cout<< "Determinant of the matrix is :"<< determinantOfMatrix(mat, N); 
     return 0; 
 } 
 
