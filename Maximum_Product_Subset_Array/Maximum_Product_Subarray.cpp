@@ -5,8 +5,10 @@
     with any subset of that array.
 */
 
-#include <bits/stdc++.h>
+#include "generic.h"
+
 using namespace std;
+
 #define lint long long int
 
 lint neg = 0, pos = 0, zero = 0, prod = 1, max_neg = INT_MIN;

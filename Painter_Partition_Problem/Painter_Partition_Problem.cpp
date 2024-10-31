@@ -8,8 +8,10 @@
     We need to find the minimum amount of time required for painting
     all the boards.
 */
-#include <bits/stdc++.h>
+#include "generic.h"
+
 using namespace std;
+
 #define lint long long int
 
 /*

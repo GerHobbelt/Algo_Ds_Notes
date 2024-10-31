@@ -3,7 +3,8 @@ of the digits extracted from the number.
 Example: number = 12345, sum = 1 + 2 + 3 + 4 + 5 = 15
 number = 1005, sum = 1 + 0 + 0 + 5 = 6 */
 
-#include<bits/stdc++.h>
+#include "generic.h"
+
 using namespace std;
 
 int sumOfDigits(int N)

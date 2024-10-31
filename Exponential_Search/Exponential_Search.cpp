@@ -3,10 +3,9 @@
 //2.Perform a binary search in that range.
 //Time Complexity : O(Log n)
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <bits/stdc++.h> 
-using namespace std; 
+#include "generic.h"
+
+using namespace std;
 
  int binarySearch(int arr[], int start, int end, int key);
 

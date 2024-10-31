@@ -1,5 +1,6 @@
 // Including Library
-#include <bits/stdc++.h>
+#include "generic.h"
+
 using namespace std;
 
 /** Function to check if given character is

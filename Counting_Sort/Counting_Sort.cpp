@@ -1,5 +1,5 @@
 // C++ implementation of Counting Sort
-#include <iostream>
+#include "generic.h"
 
 using namespace std;
 

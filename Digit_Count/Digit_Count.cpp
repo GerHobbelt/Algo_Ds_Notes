@@ -5,7 +5,8 @@ The task is to count the number of digits present in the given
 number.
 */
 
-#include<bits/stdc++.h>
+#include "generic.h"
+
 using namespace std;
 
 int getDigits(int n) {

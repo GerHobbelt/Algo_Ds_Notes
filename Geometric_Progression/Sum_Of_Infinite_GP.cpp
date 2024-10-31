@@ -12,7 +12,8 @@ The Sum of infinite series of a G.P. is defined as :
 a / (1 - r), where -1 < r < 1
 */
 
-#include<bits/stdc++.h>
+#include "generic.h"
+
 using namespace std;
 
 int main() {

@@ -11,7 +11,8 @@
                     prime factors of n.
 
 */
-#include <bits/stdc++.h>
+#include "generic.h"
+
 using namespace std;
 #define lint long long int
 

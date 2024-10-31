@@ -1,5 +1,6 @@
-#include<iostream.h>
-#include<graphics.h>
+#include "generic.h"
+
+#include <graphics.h>
 
 void main()
 {

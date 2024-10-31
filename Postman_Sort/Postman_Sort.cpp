@@ -6,13 +6,16 @@
 * where c depends on the size of the key and number of buckets.
 */
 
-#include <bits/stdc++.h>
+#include "generic.h"
+
 using namespace std;
 
 void arrange(int p, int s);
+
 int temp, maxdigits = 0, c = 0;
 int t1, t2, k, t, n = 1, i, j;
 int arr[100], arr1[100];
+
 int main(){
     int count, max;
     cout << "The size of the Array : " ;

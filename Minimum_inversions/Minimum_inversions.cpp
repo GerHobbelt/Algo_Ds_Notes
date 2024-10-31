@@ -4,7 +4,8 @@
     The task is to find the minimum number of
     inversions required so that no two adjacent elements are same.
 */
-#include <bits/stdc++.h>
+#include "generic.h"
+
 using namespace std;
 /*
     Function to return the minimum inversions required so that no

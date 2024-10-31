@@ -8,6 +8,8 @@ The cells marked as '0' are forbidden, hence move is not allowed
 
 #include "generic.h"
 
+#include <queue>
+
 using namespace std;
 #define mkp make_pair
 

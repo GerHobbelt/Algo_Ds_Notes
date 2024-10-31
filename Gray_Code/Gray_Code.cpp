@@ -1,7 +1,9 @@
 //C++ program to generate the Gray Code for any input bit length
 
-#include<bits/stdc++.h>
+#include "generic.h"
+
 #define pb push_back
+
 using namespace std;
 
 // Function to generate the Gray Code sequence

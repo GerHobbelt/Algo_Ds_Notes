@@ -5,7 +5,8 @@
         one of those numbers divides the other.
 */
 
-#include<bits/stdc++.h>
+#include "generic.h"
+
 using namespace std;
 
 int main() {

@@ -8,8 +8,10 @@
     When m is a prime number, according to Fermat's Little Theorem, (a^(m-1))%m = 1.
     On multiplying with a^(m-2) on both sides, (a^(-1))%m = (a^(m-2)).
 */
-#include <bits/stdc++.h>
+#include "generic.h"
+
 using namespace std;
+
 #define lint long long int
 
 lint modex(lint base, lint exponent, lint mod) {

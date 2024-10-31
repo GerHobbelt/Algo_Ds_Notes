@@ -9,7 +9,8 @@ Note - Note: The opponent is as clever as the user.
 */
 // C++ program to find out maximum value from a given sequence of coins
 
-#include <bits/stdc++.h>
+#include "generic.h"
+
 using namespace std;
 
 /*Returns optimal value possible that a player can

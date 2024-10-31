@@ -1,5 +1,7 @@
-#include<bits/stdc++.h>
+#include "generic.h"
+
 using namespace std;
+
 int josephus(int no,int h)
 {
     if(no==1)

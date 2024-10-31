@@ -9,9 +9,8 @@ Output is a convex hull of this set of points in ascending order of x coordinate
 
 */
 
+#include "generic.h"
 
-#include<iostream>
-#include<bits/stdc++.h>
 using namespace std;
 
 #define ptspr pair<int,int>

@@ -1,4 +1,5 @@
-#include<bits/stdc++.h>
+#include "generic.h"
+
 using namespace std;
 
 // node class for singly linked list

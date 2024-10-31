@@ -6,9 +6,9 @@ C++ program to find the scalar product of a matrix
 
 */
  
-#include <bits/stdc++.h> 
-using namespace std; 
-  
+#include "generic.h"
+
+using namespace std;
  
 #define N 3   //can be changed as per use
   

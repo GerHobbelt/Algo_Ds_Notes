@@ -1,7 +1,8 @@
 /*Perfect Square String is a string in which sum of ASCII value of all characters is a perfect square.*/ 
 
-#include<bits/stdc++.h> 
-using namespace std; 
+#include "generic.h"
+
+using namespace std;
   
 float perfectSquareString(string str) 
 { 

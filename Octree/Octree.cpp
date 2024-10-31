@@ -1,5 +1,4 @@
-#include<iostream>
-#include<vector>
+#include "generic.h"
 
 #define TLF 0    // top left front
 #define TRF 1    // top right front
@@ -232,17 +231,17 @@ public:
 int main() 
 {
     Octree tree(1, 1, 1, 4, 4, 4);
-    std::cout << "Insert (3, 3, 3)" << endl;
+    std::cout << "Insert (3, 3, 3)" << std::endl;
     tree.insert(3, 3, 3);
-    std::cout << "Insert (3, 3, 4)" << endl;
+    std::cout << "Insert (3, 3, 4)" << std::endl;
     tree.insert(3, 3, 4);
-    std::cout << "Find (3, 3, 3):" << endl;
+    std::cout << "Find (3, 3, 3):" << std::endl;
     std::cout << (tree.find(3, 3, 3) ? "True\n" : "False\n");
-    std::cout << "Find (3, 4, 4):" << endl;
+    std::cout << "Find (3, 4, 4):" << std::endl;
     std::cout << (tree.find(3, 4, 4) ? "True\n" : "False\n");
-    std::cout << "Insert (3, 4, 4)" << endl;
+    std::cout << "Insert (3, 4, 4)" << std::endl;
     tree.insert(3, 4, 4);
-    std::cout << "Find (3, 4, 4):" << endl;
+    std::cout << "Find (3, 4, 4):" << std::endl;
     std::cout << (tree.find(3, 4, 4) ? "True\n" : "False\n");
     return 0;
 }

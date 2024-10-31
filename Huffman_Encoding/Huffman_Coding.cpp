@@ -1,4 +1,5 @@
-#include <bits/stdc++.h>
+#include "generic.h"
+
 using namespace std;
 
 #define MAX_TREE_HT 100

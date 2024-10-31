@@ -1,4 +1,7 @@
-#include<bits/stdc++.h>
+#include "generic.h"
+
+#include <stack>
+
 using namespace std;
 
 int precedence_of_operator(char optr)

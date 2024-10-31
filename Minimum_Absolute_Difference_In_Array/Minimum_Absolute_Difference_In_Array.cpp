@@ -2,9 +2,10 @@
 the minimum absolute difference between any two elements in the array.
 The absolute difference between two elements ai, and aj (where i != j ) is |ai - aj|*/
 
-#include<bits/stdc++.h>
-#include <iostream>
-#include<algorithm>
+#include "generic.h"
+
+#include <algorithm>
+
 using namespace std;
 
 int minAbsoluteDiff(int arr[], int n)

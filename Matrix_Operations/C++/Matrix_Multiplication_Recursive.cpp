@@ -1,6 +1,6 @@
-#include <stdio.h> 
-#include <bits/stdc++.h> 
-using namespace std; 
+#include "generic.h"
+
+using namespace std;
  
 const int MAX = 100; 
   

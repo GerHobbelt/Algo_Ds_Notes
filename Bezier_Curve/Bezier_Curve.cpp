@@ -1,7 +1,5 @@
-#include <stdlib.h>
-#include <graphics.h>
-#include <math.h>
-#include <iostream.h>
+#include "generic.h"
+#include "graphics.h"
 
 // function that takes coordinates of control points as input and then draws the curve
 void bezier (int x[4], int y[4])

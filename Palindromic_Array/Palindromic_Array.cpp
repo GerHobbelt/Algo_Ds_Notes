@@ -2,7 +2,8 @@
 the same when read both forward and backward.
 Example: 1, 2, 3, 2, 1 */
 
-#include <bits/stdc++.h>
+#include "generic.h"
+
 using namespace std;
 
 bool isPalindromic(int arr[], int N) {

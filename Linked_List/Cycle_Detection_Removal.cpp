@@ -49,12 +49,12 @@ void rem (node * slow_ptr, node * head)
     {
         temp = slow_ptr;
         while (temp->next != slow_ptr && temp->next != ptr)
-            {
-                temp = temp->next;
-            }
-            if (temp->next == ptr)
-                break;
-            ptr = ptr->next;
+        {
+            temp = temp->next;
+        }
+        if (temp->next == ptr)
+            break;
+        ptr = ptr->next;
     }
     temp->next = NULL;
 }
@@ -105,4 +105,4 @@ int main ()
 
      After removing the cycle, linked list is as follows:
      10 20 30
-/*
+*/

@@ -1,7 +1,8 @@
-#include<stdio.h>
-#include<iostream.h>
-#include<stdlib.h>
-#include<graphics.h>
+#include "generic.h"
+
+#include <graphics.h>
+
+using namespace std;
 
 void main()
 {
@@ -39,7 +40,6 @@ void main()
     }
     getch();
     closegraph();
-
 }
 
 //Sample output - https://ibb.co/3mqM8MK

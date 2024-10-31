@@ -1,5 +1,7 @@
-#include<bits/stdc++.h>
+#include "generic.h"
+
 using namespace std;
+
 void PrintSolution(int** solution , int n)
 {
 	/*

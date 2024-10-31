@@ -10,7 +10,8 @@
     Quick Select is O(n). The worst case complexity is O(n^2).
 */
 
-#include <bits/stdc++.h>
+#include "generic.h"
+
 using namespace std;
 
 // Function to partition the array

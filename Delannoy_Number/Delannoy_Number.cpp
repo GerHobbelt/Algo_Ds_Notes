@@ -7,7 +7,8 @@ The constraint is that we can only use a step east, north or,
 north-east(diagonal).
 */
 
-#include<bits/stdc++.h>
+#include "generic.h"
+
 using namespace std;
 
 int check(int x, int y, int row, int col) {

@@ -7,7 +7,8 @@ Example: number = 4, then 4 & 3 i.e 100 && 011 is 0
 This is true for all powers of two.
 */
 
-#include<bits/stdc++.h>
+#include "generic.h"
+
 using namespace std;
 
 bool isPowerOfTwo(int x)

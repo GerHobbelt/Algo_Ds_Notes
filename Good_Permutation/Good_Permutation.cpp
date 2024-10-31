@@ -15,7 +15,8 @@ requirements. When N is odd, the swaps can not be possible.
 Hence, we print -1.
 */
 
-#include<bits/stdc++.h>
+#include "generic.h"
+
 using namespace std;
 
 void permute(int n) {

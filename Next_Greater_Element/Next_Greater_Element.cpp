@@ -12,7 +12,8 @@
     20 -> NULL
 */
 
-#include<bits/stdc++.h>
+#include "generic.h"
+
 using namespace std;
 
 // Function to compute next greater element of elements of array

@@ -7,7 +7,8 @@
     The nth Nonagonal Number has the formula : n * (7 * n - 5) / 2
 */
 
-#include<bits/stdc++.h>
+#include "generic.h"
+
 using namespace std;
 
 int nonagon(int num) {

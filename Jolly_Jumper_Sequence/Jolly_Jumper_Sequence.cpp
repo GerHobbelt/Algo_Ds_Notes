@@ -6,7 +6,8 @@ varies from 1 to n - 1, the sequence formed is said to be Jolly Jumper
 Sequence.
 */
 
-#include<bits/stdc++.h>
+#include "generic.h"
+
 using namespace std;
 
 int Jolly(int a[], int n) {

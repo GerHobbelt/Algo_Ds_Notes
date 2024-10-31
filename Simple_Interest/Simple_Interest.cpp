@@ -9,7 +9,8 @@ where p = principal amount
       t = time
 */
 
-#include<bits/stdc++.h>
+#include "generic.h"
+
 using namespace std;
 
 int main() {

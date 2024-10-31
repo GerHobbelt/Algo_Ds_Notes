@@ -6,7 +6,8 @@ into two separate subsets such that sum of elements of both the subsets
 is equal.
 */
 
-#include<bits/stdc++.h>
+#include "generic.h"
+
 using namespace std;
 
 bool check(int a[], int sum, int ind) {

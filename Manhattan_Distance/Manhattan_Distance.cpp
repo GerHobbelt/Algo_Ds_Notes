@@ -10,7 +10,8 @@ Given an array of co-ordinates. find the sum of manhattan distances
 of all the coordinates with each other.
 */
 
-#include<bits/stdc++.h>
+#include "generic.h"
+
 using namespace std;
 
 int Manhattan(int x[], int y[], int i, int j) {

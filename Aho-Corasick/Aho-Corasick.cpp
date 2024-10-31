@@ -2,8 +2,11 @@
 of a finite set of strings (the "dictionary") within an input text.
 It matches all strings simultaneously.*/
 
-using namespace std; 
-#include <bits/stdc++.h>
+#include "generic.h"
+
+#include <queue>
+
+using namespace std;
 
 const int MAXSTATE = 6 * 50 + 10; 
 // Max number of states in the matching machine.
@@ -147,4 +150,4 @@ Keyword she appears from 3 to 5
 Keyword hers appears from 4 to 7
 
 */
-}
+

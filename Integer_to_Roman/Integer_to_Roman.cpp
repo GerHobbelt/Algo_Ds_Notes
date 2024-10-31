@@ -23,8 +23,10 @@ Given an integer, convert it to a roman numeral.
  Input is guaranteed to be within the range from 1 to 3999.
 */
 
-#include <bits/stdc++.h>
+#include "generic.h"
+
 using namespace std;
+
 class Solution {
 public:
     string intToRoman(int num) {

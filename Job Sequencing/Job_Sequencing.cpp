@@ -7,8 +7,10 @@
     The problem is to find the maximum profit we can achieve while satisfying all the conditions.
 
 */
-#include <bits/stdc++.h>
+#include "generic.h"
+
 using namespace std;
+
 #define ld long double
 #define ulint unsigned long long int
 #define lint long long int

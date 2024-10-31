@@ -10,7 +10,8 @@
         d is the common difference of the A.P.
 */
 
-#include<bits/stdc++.h>
+#include "generic.h"
+
 using namespace std;
 
 int main() {

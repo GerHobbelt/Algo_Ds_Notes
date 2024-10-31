@@ -1,7 +1,5 @@
-#include<graphics.h>
-#include<stdlib.h>
-#include<stdio.h>
-#include<iostream.h>
+#include "generic.h"
+#include <graphics.h>
 
 void main()
 {

@@ -6,7 +6,8 @@
     on its right side
 */
 
-#include<bits/stdc++.h>
+#include "generic.h"
+
 using namespace std;
 
 int main() {

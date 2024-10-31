@@ -5,7 +5,8 @@
     such that the elements of the subarray are in ascending order.
 */
 
-#include <bits/stdc++.h>
+#include "generic.h"
+
 using namespace std;
 
 /*

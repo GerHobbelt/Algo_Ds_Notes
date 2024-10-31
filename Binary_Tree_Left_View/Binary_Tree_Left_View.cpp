@@ -7,7 +7,11 @@
 
 #include "generic.h"
 
+#include <queue>
+#include <map>
+
 using namespace std;
+
 #define mkp make_pair
 
 // Node of Binary Tree storing data, level,

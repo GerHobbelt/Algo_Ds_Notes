@@ -7,7 +7,11 @@ Majority Element = 2 as count[2] = 5 which is greater
 than n/2 i.e 4
 */
 
-#include<bits/stdc++.h>
+#include "generic.h"
+
+#include <map>
+#include <queue>
+
 using namespace std;
 
 int checkMajorityElement(int arr[], int N)

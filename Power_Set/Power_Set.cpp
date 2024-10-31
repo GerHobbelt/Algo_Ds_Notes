@@ -10,7 +10,8 @@ Power Set = {}, {a}, {b}, {c}, {a, b}, {a, c},  {a, b}, {b, c},
 Total elements in a power set of a set with n elements = 2^n
 */
 
-#include<bits/stdc++.h>
+#include "generic.h"
+
 using namespace std;
 
 void PowerSet(int a[], int b[], int n, int index) {

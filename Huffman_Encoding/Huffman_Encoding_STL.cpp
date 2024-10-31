@@ -1,4 +1,7 @@
-#include<bits/stdc++.h>
+#include "generic.h"
+
+#include <queue>
+
 using namespace std;
 
 // A Huffman tree node 

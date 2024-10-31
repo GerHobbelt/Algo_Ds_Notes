@@ -1,5 +1,6 @@
-#include<bits/stdc++.h> 
-using namespace std; 
+#include "generic.h"
+
+using namespace std;
   
 int nCrModpDP(int n, int r, int p) 
 { 

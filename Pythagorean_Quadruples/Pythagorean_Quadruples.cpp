@@ -7,7 +7,8 @@ formula holds :
 a^2 + b^2 + c^2 = d^2
 */
 
-#include<bits/stdc++.h>
+#include "generic.h"
+
 using namespace std;
 
 int main() {

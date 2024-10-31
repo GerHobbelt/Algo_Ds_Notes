@@ -8,7 +8,8 @@
         r is the common ratio of the G.P.
 */
 
-#include<bits/stdc++.h>
+#include "generic.h"
+
 using namespace std;
 
 int sumOfGP (int a, int r, int n) 

@@ -5,7 +5,8 @@
     ((N) * (N + 1) * (2 * N + 1)) / 6
 */
 
-#include<bits/stdc++.h>
+#include "generic.h"
+
 using namespace std;
 
 int main()

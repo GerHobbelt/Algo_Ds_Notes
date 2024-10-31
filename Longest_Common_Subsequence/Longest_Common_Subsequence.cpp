@@ -1,5 +1,6 @@
 /* Problem Statement- Given two sequences, find the length of longest subsequence present in both of them. A subsequence is a sequence that can be derived from another sequence by deleting some or no elements without changing the order of the remaining elements.*/
-#include<bits/stdc++.h> 
+#include "generic.h"
+
 using namespace std;
 
 // Function to calculate length of longest common subsequence

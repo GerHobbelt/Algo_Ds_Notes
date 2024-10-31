@@ -3,7 +3,8 @@ Leap year is an year with 366 days. Leap Year should be divisible by 4.
 Also it should be divisible by 400 and not divisible by 100.
 */
 
-#include<bits/stdc++.h>
+#include "generic.h"
+
 using namespace std;
 
 bool checkLeapYear(int year)

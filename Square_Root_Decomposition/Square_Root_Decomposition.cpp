@@ -1,4 +1,5 @@
-#include<bits/stdc++.h>
+#include "generic.h"
+
 using namespace std;
 
 void update(int index, int value, int *blocks, int input_arr[], int n){

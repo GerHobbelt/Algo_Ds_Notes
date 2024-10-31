@@ -11,10 +11,9 @@ Output : 1 2 3
          7 8 9
 */
 
+#include "generic.h"
 
-
-#include <bits/stdc++.h> 
-using namespace std; 
+using namespace std;
   
 #define SIZE 10 
   

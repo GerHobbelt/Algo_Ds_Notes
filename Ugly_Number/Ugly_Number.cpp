@@ -1,8 +1,8 @@
 //Ugly numbers are numbers whose only prime factors are 2, 3 or 5.
 
-#include <bits/stdc++.h> 
-#include <stdbool.h>
-using namespace std; 
+#include "generic.h"
+
+using namespace std;
   
 int main()
 {

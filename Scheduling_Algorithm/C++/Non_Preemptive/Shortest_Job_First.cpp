@@ -6,8 +6,9 @@ Burst Time:Time required by a process for CPU execution.
 Turn Around Time:Time Difference between completion time and arrival time.          
 Waiting Time(W.T):Time Difference between turn around time and burst time. */
 
-#include <bits/stdc++.h> 
-using namespace std; 
+#include "generic.h"
+
+using namespace std;
 
 class Process 
 {   

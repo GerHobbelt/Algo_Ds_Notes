@@ -34,8 +34,8 @@
     j = i + 1 for most of cases.
 */
 
-#include <iostream>
-#include <vector>
+#include "generic.h"
+
 using namespace std;
 
 #define ASSEMBLY_LINES  2

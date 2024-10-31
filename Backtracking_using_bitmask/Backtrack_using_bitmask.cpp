@@ -1,4 +1,5 @@
-#include <bits/stdc++.h>
+#include "generic.h"
+
 using namespace std;
 
 #define d (1 << n) - 1

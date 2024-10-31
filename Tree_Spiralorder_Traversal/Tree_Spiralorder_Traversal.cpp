@@ -1,8 +1,13 @@
 /* Spiral Order Traversal of a tree is level order traversal where levels are explored in zig-zag manner i.e. all nodes present at level 1 should be printed first from left to right, followed by nodes of level 2 right to left, followed by nodes of level 3 from left to right and so on.
 */
 
-#include <bits/stdc++.h>
+#include "generic.h"
+
+#include <map>
+#include <queue>
+
 using namespace std;
+
 #define mkp make_pair
 
 // Node of Binary Tree storing data, level, left and right child information
@@ -31,7 +36,7 @@ void SpiralOrderTraversal(Node *root)
     root->level = 0;
     map<int, vector<int>> mp;
 
-    // asigning levels to each node of Binary Tree and storing all nodes of same level in a map
+    // assigning levels to each node of Binary Tree and storing all nodes of same level in a map
     while (!q.empty()) 
     {
         // extract the front of queue
@@ -91,7 +96,7 @@ void SpiralOrderTraversal(Node *root)
 // Driver Function
 int main() 
 {
-    /* Contructing Binary Tree as:
+    /* Constructing Binary Tree as:
           1
         /   \
       2      3

@@ -1,6 +1,9 @@
 // CPP program to implement Queue using stacks
-#include <bits/stdc++.h> 
-using namespace std; 
+#include "generic.h"
+
+#include <stack>
+
+using namespace std;
 
 struct Queue { 
 	stack<int> s1, s2; 

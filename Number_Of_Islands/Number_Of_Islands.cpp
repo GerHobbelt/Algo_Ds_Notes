@@ -5,8 +5,10 @@
     components in that graph.
 */
 
-#include <bits/stdc++.h>
+#include "generic.h"
+
 using namespace std;
+
 #define C 1000
 
 // Function to perform DFS from a cell

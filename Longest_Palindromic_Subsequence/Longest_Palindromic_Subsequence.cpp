@@ -5,8 +5,10 @@
     A palindrome is a string that is same when read from any side.
 */
 
-#include <bits/stdc++.h>
+#include "generic.h"
+
 using namespace std;
+
 #define lint long long int
 
 /*

@@ -7,8 +7,10 @@
     eg. radar is same when read frontwards or backwards.
 
 */
-#include <bits/stdc++.h>
+#include "generic.h"
+
 using namespace std;
+
 #define lint long long int
 /*
     The idea is to iterate over all the characters of the string and checking in 

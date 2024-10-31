@@ -14,9 +14,9 @@ Output : 1 5 9 13
          4 8 12 16
 */
 
+#include "generic.h"
 
-#include <bits/stdc++.h> 
-using namespace std; 
+using namespace std;
   
 const int MAX = 100; 
   

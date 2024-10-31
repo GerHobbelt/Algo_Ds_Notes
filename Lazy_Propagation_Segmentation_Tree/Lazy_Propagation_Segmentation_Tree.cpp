@@ -143,7 +143,7 @@ int update(int node, int start, int end, int l, int r, int val)
     if (start > end || start > r || end < l) 
         return 0; 
 
-    / Current segment is totally within range [l, r]
+    // Current segment is totally within range [l, r]
     if (start >= l && end <= r) 
     { 
         tree[node] += (end - start + 1)*val; 

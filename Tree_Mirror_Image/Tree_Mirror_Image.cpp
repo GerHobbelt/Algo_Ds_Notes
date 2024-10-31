@@ -1,5 +1,6 @@
 
-#include <bits/stdc++.h>
+#include "generic.h"
+
 using namespace std;
 
 /* A binary tree node has data, pointer

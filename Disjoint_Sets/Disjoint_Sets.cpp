@@ -1,5 +1,9 @@
-#include<bits/stdc++.h>
+#include "generic.h"
+
+#include <unordered_map>
+
 using namespace std;
+
 #define ll long long
 #define pb push_back
 #define mp make_pair

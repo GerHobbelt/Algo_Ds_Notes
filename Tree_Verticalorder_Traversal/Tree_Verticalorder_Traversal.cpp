@@ -1,7 +1,12 @@
 /* Vertical Order Traversal of Binary Tree is a traversal in which all nodes that fall in the same vertical line are visited together, starting from the leftmost vertical line and ending at the rightmost vertical line. The horizontal distance is measured with root serving as reference, then we measure the left and right deviations of the each node. */
 
-#include <bits/stdc++.h>
+#include "generic.h"
+
+#include <map>
+#include <queue>
+
 using namespace std;
+
 #define mkp make_pair
 
 // Node of Binary Tree storing data, horizontal distance from root, left and right child information
@@ -79,7 +84,7 @@ void VerticalOrderTraversal(Node *root)
 // Driver Function
 int main() 
 {
-    /* Contructing Binary Tree as:
+    /* Constructing Binary Tree as:
             1
          /     \
         2       3

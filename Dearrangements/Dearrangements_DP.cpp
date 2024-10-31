@@ -10,7 +10,8 @@ we use the generic formula
 count(n) = (n - 1) * [count(n - 1) + count(n - 2)]
 */
 
-#include<bits/stdc++.h>
+#include "generic.h"
+
 using namespace std;
 
 int dearrangement[10000];

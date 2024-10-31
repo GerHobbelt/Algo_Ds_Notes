@@ -124,13 +124,13 @@ long int multiply(string X, string Y)
 	return P1*(1<<(2*sh)) + (P3 - P1 - P2)*(1<<sh) + P2; 
 } 
 
-// Driver program to test aboev functions 
+// Driver program to test above functions 
 int main() 
 { 
 	cout<<multiply("1100", "1010"); 
 	
 } 
 /*
-	multilication of number 12(1100) and 10(1010) is 
+	multiplication of number 12(1100) and 10(1010) is 
 	120
 */

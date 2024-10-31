@@ -5,12 +5,14 @@
     i.e. denote a number as a product of different prime factors.
 
 */
-#include <bits/stdc++.h>
+#include "generic.h"
+
 using namespace std;
+
 #define lint long long int
 
 /*
-        Since, 2 is the only even prime number, we compute it's frequence in the
+        Since, 2 is the only even prime number, we compute it's frequency in the
         prime factorization of num separately, and then run the loop from 3, and 
         increment it by 2, so that we only check the odd numbers.
         In the loop, we keep decrementing the value of num by a factor of the number,

@@ -1,4 +1,5 @@
-#include <bits/stdc++.h>
+#include "generic.h"
+
 using namespace std;
 
  vector<int> prefix_sum(vector<int> v)

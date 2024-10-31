@@ -1,5 +1,7 @@
-#include <bits/stdc++.h> 
+#include "generic.h"
+
 #define N 3
+
 using namespace std; 
 
 void Rotate(int matrix[][N]) 

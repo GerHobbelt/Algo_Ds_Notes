@@ -1,5 +1,6 @@
-#include <bits/stdc++.h>
-using namespace std; 
+#include "generic.h"
+
+using namespace std;
 
 //structure of the tree node 
 struct Node                                   

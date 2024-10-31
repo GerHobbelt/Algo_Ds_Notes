@@ -1,8 +1,7 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <limits.h> 
-#include<bits/stdc++.h>
-using namespace std; 
+#include "generic.h"
+
+using namespace std;
+
 // EXAMPLE
 //Input:  keys[] = {10, 12, 34}, freq[] = {54, 10, 4}
 //There can be following possible BSTs

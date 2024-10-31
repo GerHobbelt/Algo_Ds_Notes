@@ -1,6 +1,7 @@
 // Taylor series using Horner Rule in c++
 
-#include<bits/stdc++.h>
+#include "generic.h"
+
 using namespace std;
 
 // creating exponential function

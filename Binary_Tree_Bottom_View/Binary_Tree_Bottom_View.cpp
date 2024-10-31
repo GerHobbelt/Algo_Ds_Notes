@@ -8,7 +8,11 @@
 
 #include "generic.h"
 
+#include <map>
+#include <queue>
+
 using namespace std;
+
 #define mkp make_pair
 
 // Node of Binary Tree storing data, horizontal distance
@@ -40,7 +44,7 @@ void BottomView(Node *root)
     // variable to store distance of nodes
     int distance;
 
-    // asigning horizontal distance to each node of Binary Tree
+    // assigning horizontal distance to each node of Binary Tree
     // and replacing nodes of same horizontal distance in a map with
     // key as distance so as to obtain the Bottom View
     while (!q.empty()) 

@@ -6,8 +6,9 @@ C++ Program to compute determinant of a Matrix
 
 */
 
-#include <bits/stdc++.h> 
-using namespace std; 
+#include "generic.h"
+
+using namespace std;
   
 // Dimension of input square matrix 
 #define N 4 

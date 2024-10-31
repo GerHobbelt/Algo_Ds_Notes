@@ -6,7 +6,8 @@ two equal numbers. The task is to find the first such number greater
 than the given number.
 */
 
-#include<bits/stdc++.h>
+#include "generic.h"
+
 using namespace std;
 
 int main() {

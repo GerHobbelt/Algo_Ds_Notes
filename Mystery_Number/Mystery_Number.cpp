@@ -5,7 +5,8 @@
     where those two numbers are reverse of each other.
 */
 
-#include <bits/stdc++.h>
+#include "generic.h"
+
 using namespace std;
 
 /*

@@ -1,9 +1,9 @@
 // GSSoC
 // TimSort
 
+#include "generic.h"
 
-#include<bits/stdc++.h> 
-using namespace std; 
+using namespace std;
 
 // MERGE SORT FUNCTION : 
 void merge(int array[], int left, int mid, int right) 

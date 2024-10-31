@@ -1,5 +1,7 @@
-#include<bits/stdc++.h>
+#include "generic.h"
+
 using namespace std;
+
 int power(int a, unsigned int n, int p)
 {
     int res=1;

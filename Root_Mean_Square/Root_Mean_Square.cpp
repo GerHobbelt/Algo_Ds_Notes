@@ -6,7 +6,8 @@ It holds a lot of importance in mathematical calculations in various
 domains like Physics and geometry.
 */
 
-#include<bits/stdc++.h>
+#include "generic.h"
+
 using namespace std;
 
 void RMS(int a[], int n, int index, int ans) {

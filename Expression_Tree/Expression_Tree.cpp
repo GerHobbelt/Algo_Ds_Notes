@@ -11,7 +11,10 @@ Preorder traversal of expression tree will give us prefix to of the expression a
 traversal will results to infix expression.
 */
 
-#include<bits/stdc++.h>
+#include "generic.h"
+
+#include <stack>
+
 using namespace std;
 
 // node class for expression tree

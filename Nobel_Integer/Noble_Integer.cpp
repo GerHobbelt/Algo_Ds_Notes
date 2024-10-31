@@ -3,7 +3,8 @@ number of integers greater than x are equal to x.
 If there are many Noble integers, any of them is returned. 
 If there is no noble integer, then return -1.*/
 
-#include<bits/stdc++.h>
+#include "generic.h"
+
 using namespace std;
 
 int Noble(vector<int> &A) {

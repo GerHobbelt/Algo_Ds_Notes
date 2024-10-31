@@ -6,7 +6,8 @@ The task is to calculate total possible moves we can make to reach
 1 step towards right or up in a single move.
 */
 
-#include<bits/stdc++.h>
+#include "generic.h"
+
 using namespace std;
 
 int totalPaths(int m, int n) {

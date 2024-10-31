@@ -14,7 +14,8 @@
         Given the Burst time, We need to find Waiting time and Turnaround time of each process.
 */
 
-#include <bits/stdc++.h>
+#include "generic.h"
+
 using namespace std;
 #define lint long long int
 
@@ -25,7 +26,7 @@ void solve(lint no_of_process, lint burst_time[]) {
         We use the following equations for computing the result:
 
         Wait time of process i = wait time of process i-1 + burst time of process i-1.
-        Turn Arond time of process i = burst time of process i + wait time of process i.
+        Turn Around time of process i = burst time of process i + wait time of process i.
     */
     for (lint i = 1; i < no_of_process; i++) {
         wait_time[i] = wait_time[i - 1] + burst_time[i - 1];

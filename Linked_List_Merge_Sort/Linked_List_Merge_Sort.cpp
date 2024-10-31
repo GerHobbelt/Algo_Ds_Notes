@@ -21,7 +21,8 @@
                                          | 1 | 2 | 3 | 4 | 5 | 6 |            *
  */
 
-#include<bits/stdc++.h>
+#include "generic.h"
+
 using namespace std;
 
 struct Node {

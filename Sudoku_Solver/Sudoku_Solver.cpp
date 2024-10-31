@@ -1,4 +1,5 @@
-#include <bits/stdc++.h>
+#include "generic.h"
+
 using namespace std;
 
 /* check wether number 'num' can be placed at in r'th row and

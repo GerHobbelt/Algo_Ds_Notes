@@ -6,8 +6,10 @@
     and may cause overflow.
     Thus, we use dynamic programming approach to solve this problem as this is highly efficient over bruteforce approach.
 */
-#include <bits/stdc++.h>
+#include "generic.h"
+
 using namespace std;
+
 #define lint long long int
 
 lint nCr(lint n,lint r,lint mod){

@@ -3,7 +3,10 @@
  Find the shortest path from source vertex to every other vertex.
  Complexity O(V+E) */
 
-#include<bits/stdc++.h> 
+#include "generic.h"
+
+#include <deque>
+
 #define V 1000
 
 using namespace std; 

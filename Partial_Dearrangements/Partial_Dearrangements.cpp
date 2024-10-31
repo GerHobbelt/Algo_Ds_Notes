@@ -7,7 +7,8 @@ count of all such dearrangements of n numbers, where k numbers are
 fixed in their position.
 */
 
-#include<bits/stdc++.h>
+#include "generic.h"
+
 using namespace std;
 
 int mod = 1000000007;

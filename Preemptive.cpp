@@ -1,9 +1,12 @@
-About:In priority scheduling, a number is assigned to each process that indicates its priority level. 
+/*
+About:In priority scheduling, a number is assigned to each process that indicates its priority level.
 Lower the number, higher is the priority. In this type of scheduling algorithm, if a newer process arrives, that is having a higher 
 priority than the currently running process, then the currently running process is preempted.
 
 Program for preemptive priority
-#include <bits/stdc++.h>
+*/
+#include "generic.h"
+
 using namespace std;
 
 struct Process {
@@ -184,7 +187,7 @@ int main()
 }
 
 
-
+/*
 Output:-
 Enter the no.of Process:-5
 Arival_Time  Burst_Time  Priority
@@ -228,4 +231,4 @@ Average waiting time = 9.600000
 Average response time =3.400000
 
 Average turn around time = 15.200000   
-     
+*/

@@ -7,7 +7,7 @@
 	Memory: O(Size)
 */
 
-#include <bits/stdc++.h>
+#include "generic.h"
 
 using namespace std;
 

@@ -5,7 +5,8 @@ These numbers are similar to Fibonacci Numbers. The only difference
 is that the first two terms are 2 and 1.
 */
 
-#include<bits/stdc++.h>
+#include "generic.h"
+
 using namespace std;
 
 int lucas(int n) {

@@ -10,8 +10,10 @@ optimally and the player, who is unable to make a move in the last is
 declared a loser, We need to find out the winner of the game.
 */
 
-#include <bits/stdc++.h>
+#include "generic.h"
+
 using namespace std;
+
 #define lint long long int
 
 /*

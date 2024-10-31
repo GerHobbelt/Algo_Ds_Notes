@@ -10,7 +10,8 @@ T(2) = 01
 T(n) = T(n-1) + T(n-2)
 */
 
-#include<bits/stdc++.h>
+#include "generic.h"
+
 using namespace std;
 
 string fibonacci(int n) {

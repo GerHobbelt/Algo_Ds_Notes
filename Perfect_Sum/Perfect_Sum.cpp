@@ -6,7 +6,8 @@ Example: arr = [1, 7, 3, 5, 6] and sum = 8, the solutions possible
 are [1, 7], [3, 5].
 */
 
-#include<bits/stdc++.h>
+#include "generic.h"
+
 using namespace std;
 
 int flag = 0;

@@ -9,7 +9,8 @@
     formula for the computation of sum.
 */
 
-#include<bits/stdc++.h>
+#include "generic.h"
+
 using namespace std;
 
 int main() {

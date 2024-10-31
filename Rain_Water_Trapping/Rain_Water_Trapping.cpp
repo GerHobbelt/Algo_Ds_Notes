@@ -1,7 +1,7 @@
 //Rain_Water_Trapping
-#include <bits/stdc++.h> 
+#include "generic.h"
 
-using namespace std; 
+using namespace std;
   
 int Find_Water(int a[], int size) 
 { 

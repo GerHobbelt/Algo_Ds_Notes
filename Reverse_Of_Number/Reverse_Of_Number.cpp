@@ -3,7 +3,8 @@ the original number backwards.
 Example: number = 12345, reverse = 54321
 number = 1005, reverse = 5001 */
 
-#include<bits/stdc++.h>
+#include "generic.h"
+
 using namespace std;
 
 // Function to reverse a number

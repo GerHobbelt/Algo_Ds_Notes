@@ -1,5 +1,6 @@
-#include<bits/stdc++.h> 
-using namespace std; 
+#include "generic.h"
+
+using namespace std;
   
 // Function to rotations of a number 
 void rotation(int num) 

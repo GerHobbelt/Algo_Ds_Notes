@@ -1,7 +1,9 @@
 // Segmented Sieve
 
-#include<bits/stdc++.h>
+#include "generic.h"
+
 using namespace std;
+
 #define MAX 100001
 
 // Creating Simple sieve of eratosthenes

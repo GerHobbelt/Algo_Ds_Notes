@@ -5,7 +5,7 @@
 	Works with negative cycles
 */
 
-#include <bits/stdc++.h>
+#include "generic.h"
 
 using namespace std;
 

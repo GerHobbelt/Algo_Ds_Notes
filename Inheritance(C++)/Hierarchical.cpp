@@ -12,7 +12,7 @@ class person
  		void read()
  		{
  			name = "Akash";
-			phno = 9283749093;
+			phno = 9283749093L;
  		}
 
  		void show()

@@ -6,7 +6,8 @@ binary representation of the number. The task is to calculate
 total number of set bits in all numbers till N.
 */
 
-#include<bits/stdc++.h>
+#include "generic.h"
+
 using namespace std;
 
 int count(int n) {

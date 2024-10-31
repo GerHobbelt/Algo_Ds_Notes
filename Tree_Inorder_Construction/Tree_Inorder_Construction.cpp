@@ -1,7 +1,6 @@
-#include <stdio.h> 
-#include <string.h> 
-#include<bits/stdc++.h>
-using namespace std; 
+#include "generic.h"
+
+using namespace std;
 
 struct node 
 { 

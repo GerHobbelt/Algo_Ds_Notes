@@ -10,7 +10,8 @@ For calculating the distance between two points (x1, y1) & (x2, y2),
 we calculate -> sqrt((x1 - x2)^2 + (y1 - y2)^2)
 */
 
-#include<bits/stdc++.h>
+#include "generic.h"
+
 using namespace std;
 
 int main() {

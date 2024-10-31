@@ -1,5 +1,7 @@
 /* Amit Bansal - amitbansal7 */
-#include <bits/stdc++.h>
+
+#include "generic.h"
+
 using namespace std;
 
 //Dijkstra's Algorithm for single source shortest paths using STL

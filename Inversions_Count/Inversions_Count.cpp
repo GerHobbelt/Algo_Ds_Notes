@@ -1,4 +1,5 @@
-#include<bits/stdc++.h>
+#include "generic.h"
+
 using namespace std;
 
 //merge two sorted arrays such that resultant array is also sorted

@@ -6,10 +6,9 @@
 //3.Iterate over the pigeonhole array in order, and put elements from non-empty 
 //pigeonholes back into the original array.
 
-#include <stdio.h> 
-#include <stdlib.h>
-#include <bits/stdc++.h> 
-using namespace std; 
+#include "generic.h"
+
+using namespace std;
 
 void pigeonholesort(int arr[], int size) 
 { 

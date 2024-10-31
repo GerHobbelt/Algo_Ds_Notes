@@ -6,8 +6,10 @@
     obtain the sum 14 by taking the elements 1, 7 and 6 
 */
 
-#include <bits/stdc++.h>
+#include "generic.h"
+
 using namespace std;
+
 typedef long long int ll;
 
 // Function to compute whether a subset of array exists

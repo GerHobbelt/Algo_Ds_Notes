@@ -7,7 +7,8 @@ numbers of the sequence.
 T(n) = T(n-1) + T(n-2) + T(n-3)
 */
 
-#include<bits/stdc++.h>
+#include "generic.h"
+
 using namespace std;
 
 int tribonacci(int n) {
