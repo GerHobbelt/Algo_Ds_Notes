@@ -1,9 +1,9 @@
 // Merging to sorted array a[] and b[] and storing it in c[]
 
-#include <iostream>
-#include <math.h>
+#include "generic.h"
 
-using namespace std; 
+using namespace std;
+
 int main()
 {
     int i, num1, num2;
@@ -11,7 +11,7 @@ int main()
     cout << "Enter number of elements in array 1: ";
     cin >> num1;
     
-    int a[num1];
+    vector<int> a(num1);
     cout << "Enter your sorted array 1: ";
     for (i = 0; i < num1; i++)
     {
@@ -21,7 +21,7 @@ int main()
     cout << "Enter number of elements in array 2: ";
     cin >> num2;
 
-    int b[num2], c[num1 + num2];
+    vector<int> b(num2), c(num1 + num2);
 
     cout << "Enter your sorted array 2: ";
     for (i = 0; i < num2; i++)
