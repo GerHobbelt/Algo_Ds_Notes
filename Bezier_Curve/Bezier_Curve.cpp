@@ -18,13 +18,14 @@ void bezier (int x[4], int y[4])
     return;
 }
 
-void main()
+int main()
 {
     // two arrays to hold the coordinates of 4 control points
     int x[4] = {23, 49, 95, 130};
     int y[4] = {76, 92, 112, 73};
     bezier (x, y);
     closegraph();
+		return 0;
 }
 
 //Sample output - https://ibb.co/qJttpQm
