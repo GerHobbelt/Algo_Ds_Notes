@@ -327,7 +327,7 @@ extern "C" {
 	int  graphresult (void);
 	unsigned
 		imagesize (int, int, int, int);
-	void initgraph (int *, int *, char *);
+	void initgraph (int *, int *, const char *);
 	int  installuserdriver (char *, int (*)(void));
 	int  installuserfont (char *);
 	int  bgi_kbhit (void);
@@ -379,7 +379,7 @@ extern "C" {
 	int  COLOR32 (Uint32);
 	char *colorname (int);
 #define colorRGB(r,g,b)  0xff000000 | ((r) << 16) | ((g) << 8) | (b)
-	void copysurface (SDL_Surface *, int, int, int, int);
+	//void copysurface (SDL_Surface *, int, int, int, int);
 	int doubleclick (void);
 	int  edelay (int);
 	int  event (void);
@@ -440,6 +440,9 @@ extern "C" {
 	int  xkb_hit (void);
 	// fix for for MSYS / Mingw64 bug
 #define xkbhit xkb_hit
+
+
+	void clrscr(void);
 
 #ifdef __cplusplus
 }

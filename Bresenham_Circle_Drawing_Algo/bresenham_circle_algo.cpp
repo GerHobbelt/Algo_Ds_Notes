@@ -1,6 +1,8 @@
 #include "generic.h"
 #include <graphics.h>
 
+using namespace std;
+
 void main()
 {
     clrscr();
@@ -38,7 +40,7 @@ void main()
         x++;
 
         //since circle is 8 point symmetric so using this property to plot the circle
-        //first and second input of putpixel are the coordiantes while the third one
+        //first and second input of putpixel are the coordinates while the third one
 	//is the color of the line
         putpixel(x0+x, y0+y, 10);
         putpixel(x0-x, y0-y, 9);
