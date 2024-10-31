@@ -1,9 +1,9 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include<bits/stdc++.h>
 #include <algorithm> 
 #include <vector> 
-using namespace std; 
+
+#include "generic.h"
+
+using namespace std;
   
 
 int main() 

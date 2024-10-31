@@ -6,7 +6,8 @@ Example: 5 and 7, as gcd(5, 7) = 1
 9 and 11, as gcd(9, 11) = 1
 */
 
-#include<bits/stdc++.h>
+#include "generic.h"
+
 using namespace std;
 
 int isCoprime(int a, int b)

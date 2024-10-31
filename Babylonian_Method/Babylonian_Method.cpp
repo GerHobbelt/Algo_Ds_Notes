@@ -6,8 +6,9 @@
       a) Get the next approximation for root using average of x and y
       b) Set y = n/x */
       
-# include <bits/stdc++.h> 
-using namespace std;   
+#include "generic.h"
+
+using namespace std;
 
 float squareRoot(float num) 
 {    

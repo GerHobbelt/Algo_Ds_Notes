@@ -1,4 +1,5 @@
-#include <bits/stdc++.h>
+#include "generic.h"
+
 using namespace std;
 
 bool circle_sort_rec(int *arr,int n)

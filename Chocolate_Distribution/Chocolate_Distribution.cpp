@@ -1,6 +1,5 @@
 //Chocolate Distribution problem
-#include <bits/stdc++.h>
-#include <iostream>
+#include "generic.h"
 
 using namespace std;
 

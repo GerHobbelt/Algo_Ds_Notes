@@ -9,7 +9,8 @@ There will be a matrix input, such that M[i][j] = 1, if ith person
 knows jth person, else 0.
 */
 
-#include<bits/stdc++.h>
+#include "generic.h"
+
 using namespace std;
 
 int Celebrity(int Person[][100], int n) {

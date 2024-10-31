@@ -20,7 +20,7 @@ int main()
     int f = 0;
 
     // Number whose frequency has to be found
-    cout << "Enter the number whose occurence is to be found: ";
+    cout << "Enter the number whose occurrence is to be found: ";
     cin >> number;
 
     for (i = 0; i < num; i++)

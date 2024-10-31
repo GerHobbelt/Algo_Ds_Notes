@@ -6,8 +6,8 @@
     T is the time span
 */
 
-#include<bits/stdc++.h>
-#include<math.h>
+#include "generic.h"
+
 using namespace std;
 
 int main() {

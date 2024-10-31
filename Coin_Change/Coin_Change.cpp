@@ -10,7 +10,7 @@
     5 = 2 + 3
 */
 
-#include<bits/stdc++.h>
+#include "generic.h"
 
 using namespace std;
 

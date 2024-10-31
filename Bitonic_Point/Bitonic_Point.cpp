@@ -6,7 +6,8 @@ The bitonic point in an array is the index before which all the numbers
 are in increasing order and after which, all are in decreasing order.
 */
 
-#include<bits/stdc++.h>
+#include "generic.h"
+
 using namespace std;
 
 int bitonic(int a[], int n) {

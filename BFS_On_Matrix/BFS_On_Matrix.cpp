@@ -6,7 +6,8 @@ The cells marked as '1', where a move is allowed.
 The cells marked as '0' are forbidden, hence move is not allowed
 */
 
-#include<bits/stdc++.h>
+#include "generic.h"
+
 using namespace std;
 #define mkp make_pair
 

@@ -6,7 +6,8 @@ can be obtained by rotating the concerned number any number
 of times between it's digits.
 */
 
-#include<bits/stdc++.h>
+#include "generic.h"
+
 using namespace std;
 
 int getDigits(int n) {

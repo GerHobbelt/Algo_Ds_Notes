@@ -1,9 +1,9 @@
 //Binary Insertion sort is a variant of Insertion sorting in which proper location to insert
 //the selected element is found using the binary search.
-#include <stdio.h> 
-#include <stdlib.h>
-#include <bits/stdc++.h> 
-using namespace std; 
+
+#include "generic.h"
+
+using namespace std;
 
 int binarySearch(int arr[], int item, int start, int end) ; 
 

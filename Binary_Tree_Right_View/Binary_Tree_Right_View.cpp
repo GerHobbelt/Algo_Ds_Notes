@@ -5,7 +5,8 @@
     would be the last node of that level.
 */
 
-#include <bits/stdc++.h>
+#include "generic.h"
+
 using namespace std;
 #define mkp make_pair
 

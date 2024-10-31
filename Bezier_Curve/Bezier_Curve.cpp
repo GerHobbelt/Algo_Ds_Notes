@@ -3,7 +3,7 @@
 #include <math.h>
 #include <iostream.h>
 
-//function that takes coordinates of control points as input and then draws the curve
+// function that takes coordinates of control points as input and then draws the curve
 void bezier (int x[4], int y[4])
 {
     int gd = DETECT, gm;

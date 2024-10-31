@@ -1,5 +1,7 @@
 // C++ Code for Comb Sort Algorithm
-#include <bits/stdc++.h>
+
+#include "generic.h"
+
 using namespace std;
 
 // Function to sort arr[] using Comb Sort

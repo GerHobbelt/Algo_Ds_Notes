@@ -6,7 +6,8 @@
     then we measure the left and right deviations of the each node.
 */
 
-#include <bits/stdc++.h>
+#include "generic.h"
+
 using namespace std;
 #define mkp make_pair
 

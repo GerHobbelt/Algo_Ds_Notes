@@ -2,7 +2,8 @@
 strictly increasing then after a point strictly decreasing.
 Example: -10, 0, 3, 5, 15, 13, 7, 2 */
 
-#include<bits/stdc++.h>
+#include "generic.h"
+
 using namespace std;
 
 int isBitonic(int arr[], int N)

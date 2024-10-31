@@ -1,6 +1,7 @@
 //A connected component of an undirected graph is a subgraph in which any two vertices are connected to each other by paths, and which is connected to no additional vertices in the supergraph. 
 
-#include<bits/stdc++.h>
+#include "generic.h"
+
 using namespace std;
 
 // Recursive Function to perform DFS on graph using adjacency list
