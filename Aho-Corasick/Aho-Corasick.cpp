@@ -74,8 +74,7 @@ int buildMachine(const vector<string> &words, char lowestChar = 'a', char highes
           {    
                if (g[state][c] != -1)
                {      
-		    int failure = fail[state];
-		    int failure = fail[state];
+            		    int failure = fail[state];
                     while (g[failure][c] == -1)
                     {
                          failure = fail[failure];
