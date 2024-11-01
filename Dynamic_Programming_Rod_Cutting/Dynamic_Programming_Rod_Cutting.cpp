@@ -13,7 +13,9 @@ int max(int a, int b)
 // Returns the max obtainable cost
 int CutRod(int cost[], int n)
 {
-	int val[n + 1], i, j;
+	vector<int> val(n + 1);
+	int i, j;
+
     val[0] = 0;
 
 	for (i = 1; i <= n; i++)

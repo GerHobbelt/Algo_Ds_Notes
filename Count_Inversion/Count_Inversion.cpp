@@ -62,7 +62,7 @@ int mergeSort(int array[], int aux[], int low, int high)
 //wrapper function that returns number of inversions
 int inversions_count(int array[], int n) 
 {
-    int aux[n];
+	vector<int> aux(n);
     return mergeSort(array, aux, 0, n-1);
 }
 
@@ -70,7 +70,7 @@ int main ()
 {       
     int n;
     cin >> n;
-    int arr[n];
+		vector<int> arr(n);
     for(int i = 0; i < n; i++)
     cin >> arr[i];
     cout << (inversions_count(arr, n)) << endl;

@@ -47,7 +47,7 @@ int assemblyLineScheduling(int nodes, vector<vector<int> > &line, int inTime[], 
     // inTime  -> list of values of In time for assembly lines
     // outTime -> list of values of Out time for assembly lines
 
-    int line1[nodes + 2], line2[nodes + 2];
+	vector<int> line1(nodes + 2), line2(nodes + 2);
     // line1 and line2 for storing the calculated cost at each node
     
     // Adding in_time 

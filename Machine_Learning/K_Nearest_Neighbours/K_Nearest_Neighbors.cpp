@@ -14,7 +14,7 @@ int main() {
     struct point temp;
     cout << "Number of data points: ";
     cin >> n;
-    struct point arr[n];
+		vector<struct point> arr(n);
     cout << "\nEnter the dataset values: \n";
     cout << "w\tx\ty\tz\top\n";
 

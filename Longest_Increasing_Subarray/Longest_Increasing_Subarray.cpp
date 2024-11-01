@@ -49,7 +49,7 @@ void solve(int a[], int n) {
 int main() {
     int num;
     cin >> num;
-    int arr[num];
+		vector<int> arr(num);
     for (int i = 0; i < num; i++) {
         cin >> arr[i];
     }

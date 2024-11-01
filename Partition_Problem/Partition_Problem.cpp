@@ -27,7 +27,7 @@ bool check(int a[], int sum, int ind) {
 int main() {
     int n;
     cin >> n;
-    int a[n];
+		vector<int> a(n);
     int sum = 0;
     for (int i = 0; i < n; i++) {
         cin >> a[i];

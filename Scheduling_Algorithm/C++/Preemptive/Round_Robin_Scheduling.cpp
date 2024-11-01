@@ -20,9 +20,9 @@ int main()
 	cout << "Enter number of processes: ";
 	cin >> no_of_process;
 
-	int a[no_of_process];	//Arrival Time
-	int b[no_of_process];	//Burst Time
-	int r[no_of_process];
+	vector<int> a(no_of_process);	//Arrival Time
+	vector<int> b(no_of_process);	//Burst Time
+	vector<int> r(no_of_process);
 	remaining_time = no_of_process;
 
 	for (i = 0; i < no_of_process; i++)

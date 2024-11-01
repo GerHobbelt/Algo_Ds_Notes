@@ -16,7 +16,7 @@ int main()
     cin>>text; 
     int N = strlen(text); 
     N = 2*N + 1; //count the next position
-    int L[N]; //array to store longest palindrome length
+		vector<int> L(N); //array to store longest palindrome length
     L[0] = 0; 
     L[1] = 1; 
     int center = 1; //centerPosition  

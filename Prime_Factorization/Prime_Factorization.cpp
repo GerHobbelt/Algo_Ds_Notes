@@ -48,7 +48,7 @@ void prime_factorize(lint num){
 int main()
 {
     lint num;
-    cin>>num
+		cin>>num;
     cout<<num<<" = ";
     prime_factorize(num);
 }

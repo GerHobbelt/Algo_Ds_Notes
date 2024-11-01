@@ -8,7 +8,7 @@ int main()
 	cout<<"\nEnter the number of element";
 	cin>>n1;
 	n=n1;//to store the number of elements
-	int a[n];
+	vector<int> a(n);
 	cout<<"\nEnter the element";
 	for(i = 0; i < n; i++)
 		{

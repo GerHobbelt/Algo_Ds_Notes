@@ -41,7 +41,7 @@ vector<int>* sieve()
 // Segmented sieve function
 void printPrimesSegmented(long long lower, long long upper, vector<int>* & primes)
 {
-    int isPrime[upper - lower + 1];
+	vector<int> isPrime(upper - lower + 1);
 
     for(int i = 0; i <= upper - lower; i++)
     {

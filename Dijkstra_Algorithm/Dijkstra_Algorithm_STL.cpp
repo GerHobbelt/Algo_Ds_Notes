@@ -32,7 +32,7 @@ void Dijkstra(vector <pair<int, int> >adj[],int src,int v)
 	//Using priority Queue to implement Min Heap.
 
 	vector<int >dist(v,INF);
-	int parent[v];
+	vector<int> parent(v);
 	parent[src] = src;
 
 	pq.push(make_pair(0,src));

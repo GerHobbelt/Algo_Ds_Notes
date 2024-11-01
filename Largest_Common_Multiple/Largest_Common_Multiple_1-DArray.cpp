@@ -33,7 +33,7 @@ int main()
     int n, i;
     cout << "Enter the no. of elements of array\n";
     cin >> n;
-    int a[n];
+    vector<int> a(n);
     cout << "Enter the elements of array\n";
     for (i = 0; i < n; i++) 
     {

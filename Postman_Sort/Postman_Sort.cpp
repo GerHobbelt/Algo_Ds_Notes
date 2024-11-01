@@ -20,7 +20,7 @@ int main(){
     int count, max;
     cout << "The size of the Array : " ;
     cin >> count;
-    int arr[count];
+		vector<int> arr(count);
     for(i = 0; i < count; i++)
         cin >> arr[i];
     

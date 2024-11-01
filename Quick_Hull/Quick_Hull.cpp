@@ -111,7 +111,7 @@ int main()
     cout<<"Enter number of points \n";
     cin>>n;
 
-    ptspr a[n];
+		vector<ptspr> a(n);
     for(int i=0; i<n; i++)
     {
         cin>>x>>y;

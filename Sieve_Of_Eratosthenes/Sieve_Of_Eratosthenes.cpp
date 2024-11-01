@@ -7,7 +7,7 @@ void SieveOfEratosthenes(int n)
     // Create a boolean array "prime[0..n]" and initialize
     // all entries it as true. A value in prime[i] will
     // finally be false if i is Not a prime, else true.
-    bool prime[n + 1];
+	vector<bool> prime(n + 1);
 
     for(int p = 2; p*p <= n; p++)
     {

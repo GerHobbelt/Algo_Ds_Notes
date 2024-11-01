@@ -19,8 +19,8 @@ int main()
     int n ;
     cout << "Enter the number of processes " ;
     cin >> n ;
-    int processes[n]; 
-    int burst_time[n];
+		vector<int> processes(n);
+		vector<int> burst_time(n);
     for (int i = 0 ; i < n ; i++)
     {
         cout << "Enter the burst time for process " << i+1 << ": " ;

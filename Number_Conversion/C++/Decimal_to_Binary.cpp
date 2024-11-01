@@ -13,7 +13,8 @@ void printBinary(int n){
     int size = log2(n) + 1;
     
     // Array to store the binary number    
-    int b[size], j = 0;    
+		vector<int> b(size);
+    int j = 0;
     while(n != 0){
         b[j] = n % 2;
         n = n / 2;

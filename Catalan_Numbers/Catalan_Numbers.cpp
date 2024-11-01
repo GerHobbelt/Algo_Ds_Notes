@@ -19,7 +19,7 @@ int main()
     cin >> n;
 
     // Catalan array stores the catalan numbers from 1....n
-    ll Catalan[n + 1];
+		vector<ll> Catalan(n + 1);
     memset(Catalan, 0, sizeof(Catalan));
 
     // The first two values are 1 for this series

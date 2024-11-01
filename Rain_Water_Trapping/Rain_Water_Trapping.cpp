@@ -6,10 +6,10 @@ using namespace std;
 int Find_Water(int a[], int size) 
 { 
     // left[i] is for height of tallest bar to the left of it including itself    
-    int left[size]; 
+	vector<int> left(size);
   
     // Right [i] contains height of tallest bar to the right of it including itself
-    int right[size]; 
+	vector<int> right(size);
   
     // Initializing result 
     int water_volume = 0; 

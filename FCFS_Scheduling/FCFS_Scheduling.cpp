@@ -17,10 +17,11 @@
 #include "generic.h"
 
 using namespace std;
+
 #define lint long long int
 
 void solve(lint no_of_process, lint burst_time[]) {
-    lint wait_time[no_of_process], turnaround_time[no_of_process];
+	vector<lint> wait_time(no_of_process), turnaround_time(no_of_process);
     wait_time[0] = 0; // wait time of 1st process is 0.
     /*
         We use the following equations for computing the result:
@@ -43,7 +44,7 @@ void solve(lint no_of_process, lint burst_time[]) {
 int main() {
     lint no_of_process;
     cin >> no_of_process;
-    lint burst_time[no_of_process];
+		vector<lint> burst_time(no_of_process);
     for (int i = 0; i < no_of_process; i++)
          cin >> burst_time[i];
     solve(no_of_process, burst_time);

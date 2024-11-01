@@ -5,7 +5,7 @@ using namespace std;
 #define lint long long int
 
 lint UnboundedKnapsack(lint Capacity,lint n, lint weight[],lint value[]){
-    lint maxProfit[Capacity+1];
+	vector<lint> maxProfit(Capacity+1);
     for(lint i=0;i<Capacity+1;i++){
         maxProfit[i]=0;                            // Initialzing our dp array with 0
     }

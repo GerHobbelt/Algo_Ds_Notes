@@ -10,7 +10,7 @@ void merge(int array[], int left, int mid, int right)
 {  
 
     int leftLength = mid - left + 1, rightLength = right - mid; 
-    int Left[leftLength], Right[rightLength]; 
+		vector<int> Left(leftLength), Right(rightLength);
     for (int i = 0; i < leftLength; i++) 
 	Left[i] = array[left + i]; 
     for (int i = 0; i < rightLength; i++) 
@@ -69,7 +69,7 @@ int main()
     int n;
     cout << "Enter number of elements in your array: ";
     cin  >> n;
-    int array[n];
+		vector<int> array(n);
     cout << "Enter your array: ";
     for(i = 0; i < n; i++)
     {

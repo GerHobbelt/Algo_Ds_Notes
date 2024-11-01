@@ -18,7 +18,7 @@ int main()
   int size,i; 
   cout<<"Enter the size of the array ";
   cin>>size;
-  int arr[size];
+	vector<int> arr(size);
   cout<<"Enter the elements ";
   for ( i=0;i<size;i++)
      cin>>arr[i] ; 
@@ -26,7 +26,7 @@ int main()
   cout<<"Enter the numbers of query ";
   cin>>no;
      
-  Query q[no];
+	vector<Query> q(no);
   for (i=0 ;i<no;i++)
    {
       cout<<"Enter the start of the query ";

@@ -51,7 +51,7 @@ int main(){
     
     int n;
     cin >> n;
-    int input_arr[n]; 
+		vector<int> input_arr(n);
     for (int i = 0; i < n; i++) {
         cin >> input_arr[i];
     }

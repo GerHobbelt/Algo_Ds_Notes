@@ -6,7 +6,8 @@ are at-least (n - k) indices where the value is equal to the index
 of that number.
 */
 
-#include<bits/stdc++.h>
+#include "generic.h"
+
 using namespace std;
 
 int mod = 1000000007;

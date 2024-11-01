@@ -29,7 +29,7 @@ int main()
     int n;
     cout << "Enter the size of an Array: ";
     cin >> n;
-    int arr[n];
+		vector<int> arr(n);
     for(int i = 0; i < n; i++){
         cin >> arr[i];
     }

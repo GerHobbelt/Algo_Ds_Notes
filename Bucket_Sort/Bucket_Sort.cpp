@@ -21,7 +21,7 @@ int main()
 
 	//sorting arr[] of size n using bucket sort 
     
-    std::vector<float> bucket[n];// Create n empty buckets  
+    std::vector<float> bucket(n);// Create n empty buckets  
      
     //Put values in different buckets 
     for (int i=0; i<n; i++) 

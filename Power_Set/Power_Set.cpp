@@ -34,8 +34,8 @@ void PowerSet(int a[], int b[], int n, int index) {
 int main() {
     int n;
     cin >> n;
-    int a[n];
-    int b[n];
+		vector<int> a(n);
+		vector<int> b(n);
     for (int i = 0; i < n; i++) {
         cin >> a[i];
         b[i] = 0;

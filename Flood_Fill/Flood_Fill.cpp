@@ -1,5 +1,7 @@
-#include <stdio.h>
+#include "generic.h"
 #include <graphics.h>
+
+using namespace std;
 
 void floodFill (int x, int y, int old, int newcol)
 {

@@ -20,7 +20,7 @@ class Process
     int art; // Arrival Time 
     void WaitingTime(Process proc[], int n,int wt[]) 
     { 
-        int runtime[n]; 
+			vector<int> runtime(n);
 
         // Copy the burst time into runtime
         for (int i = 0 ; i < n ; i++) 
@@ -76,7 +76,8 @@ class Process
 
     void avgTime(Process proc[], int n) 
     { 
-        int wt[n], tat[n], total_wt = 0, total_tat = 0; 
+			vector<int> wt(n), tat(n);
+			int total_wt = 0, total_tat = 0;
 
         WaitingTime(proc, n, wt); 
         TurnAroundTime(proc, n, wt, tat); 
@@ -100,7 +101,7 @@ int main()
     int n;
     cout << "Enter the number of processes ";
     cin >> n;
-    Process proc[n];
+		vector<Process> proc(n);
     
     for (int i = 0 ; i < n ; i++)
     {   

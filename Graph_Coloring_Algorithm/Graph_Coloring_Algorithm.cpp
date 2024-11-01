@@ -28,7 +28,7 @@ public:
 
 	// Displays greedy coloring of the vertices 
 	void greedyColoring(){ 
-		int res[num_V]; 
+		vector<int> res(num_V);
 
 		// Assign the 1st color to 1st vertex 
 		res[0] = 0; 
@@ -38,7 +38,7 @@ public:
 			res[i] = -1;                // no color is assigned to u 
 
 		//True value of available[clr] --> the color clr assigned to one of its adjacent vertices 
-		bool available[num_V]; 
+		vector<bool> available(num_V);
 		for (int clr = 0; clr < num_V; clr++) 
 			available[clr] = false; 
 

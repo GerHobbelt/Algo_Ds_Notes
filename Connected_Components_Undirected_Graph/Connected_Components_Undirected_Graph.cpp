@@ -32,9 +32,9 @@ int main()
     // Initialise number of edges
     int edges = 6;
     // Initialise Adjacency List for graph
-    vector<int> adj[nodes+1];
+    vector<int> adj(nodes+1);
     // Visited array to keep track of visited nodes
-    bool visited[nodes+1];
+		vector<bool> visited(nodes+1);
     /*  Input Graph:
           1----6     4
         /   \   \     \

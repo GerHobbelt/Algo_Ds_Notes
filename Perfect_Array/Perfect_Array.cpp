@@ -33,7 +33,7 @@ int main() {
     cout << "Enter length of array";
     cin >> num;
     cout << "Enter array elements :";
-    int a[num];
+		vector<int> a(num);
     for (int i = 0; i < num; i++) {
         cin >> a[i];
     }

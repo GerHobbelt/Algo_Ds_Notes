@@ -31,8 +31,8 @@ int ManhattanSum(int x[], int y[], int n) {
 int main() {
     int n;
     cin >> n;
-    int x[n];
-    int y[n];
+		vector<int> x(n);
+		vector<int> y(n);
     for (int i = 0; i < n; i++) {
         cin >> x[i];
     }

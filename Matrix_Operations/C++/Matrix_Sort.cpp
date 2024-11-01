@@ -21,7 +21,7 @@ using namespace std;
 void sortMat(int mat[SIZE][SIZE], int n) 
 { 
     // temporary matrix of size n^2 
-    int temp[n * n]; 
+	vector<int> temp(n * n);
     int k = 0; 
   
     // copy the elements of matrix one by one 

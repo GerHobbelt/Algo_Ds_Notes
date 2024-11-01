@@ -16,7 +16,7 @@ int Max_Element(int array[], int size)
 
 void Counting_Sort(int array[], int size, int exp)
 {
-    int output[size];
+	vector<int> output(size);
     int i, count[10] = {0};
 
     for(i = 0; i < size; i++)

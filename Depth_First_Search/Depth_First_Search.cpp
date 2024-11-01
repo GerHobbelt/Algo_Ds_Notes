@@ -29,7 +29,7 @@ class Graph
 
 void Graph::dfs(int starting)
 {
-    bool visited[numberVertex];
+	vector<bool> visited(numberVertex);
 
     for(int i = 0; i < numberVertex; i++)
         visited[i] = false;

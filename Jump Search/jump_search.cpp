@@ -37,7 +37,7 @@ int main()
     int no,ele;
     cout << "Enter no. of elements in an array: ";
     cin >> no;
-    int arr[no];
+		vector<int> arr(no);
     cout << "Enter elements in an array in increasing order: ";
     for(int i=0;i<no;i++)
     {

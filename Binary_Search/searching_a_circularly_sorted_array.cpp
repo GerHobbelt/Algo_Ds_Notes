@@ -30,7 +30,7 @@ int main()
 {
     int num;
     cin >> num;
-    int arr[num]; // array must contain distinct elements for this to work
+		vector<int> arr(num); // array must contain distinct elements for this to work
     for (int i = 0; i < num; i++) {
         cin >> arr[i];
     } 

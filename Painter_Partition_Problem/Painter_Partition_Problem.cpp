@@ -65,7 +65,7 @@ lint partition(lint board[], lint k, lint sum, lint n, lint m) {
 int main(){
     lint n; // Enter the number of boards.
     cin >> n;
-    lint board[n];  // Length of boards.
+		vector<lint> board(n);  // Length of boards.
     for(lint i = 0; i < n; i++){
         cin >> board[i]; 
     }

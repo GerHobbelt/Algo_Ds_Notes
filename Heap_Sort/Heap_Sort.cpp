@@ -58,7 +58,7 @@ int main()
     int n, i;
     cout<<"Enter number of elements in your array: ";
     cin>>n;
-    int array[n];
+		vector<int> array(n);
     cout<<"Enter your array: ";
     for (i = 0; i < n; i++)
     {

@@ -19,7 +19,7 @@ int main() {
     int N;
     cin >> N;
     cout << "Enter elements of array" << endl;
-    int arr[N];
+		vector<int> arr(N);
     for (int i = 0; i < N; i++)
         cin >> arr[i];
     if (isPalindromic(arr, N))

@@ -7,7 +7,7 @@ using namespace std;
 void counting_sort(int input[], int n)
 {
 
-    int output[n]; // The output will have sorted input array
+	vector<int> output(n); // The output will have sorted input array
     int max = input[0];
     int min = input[0];
 
@@ -21,7 +21,7 @@ void counting_sort(int input[], int n)
 
     int k = max - min + 1; // Size of count array
 
-    int count_array[k]; // Create a count_array to store count of each individual input value
+		vector<int> count_array(k); // Create a count_array to store count of each individual input value
     fill_n(count_array, k, 0); // Initialize count_array elements as zero
 
     for(int i = 0; i < n; i++)

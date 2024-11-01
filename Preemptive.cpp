@@ -128,7 +128,7 @@ void priority(Process array[], int n)
         heapsize = 0, currentTime = array[0].arrivalTime,
         totalresponsetime = 0;
 
-    Process Heap[4 * n];
+		vector<Process> Heap(4 * n);
 
     // Calculating the total burst time
     // of the processes

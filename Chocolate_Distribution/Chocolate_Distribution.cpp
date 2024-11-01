@@ -30,7 +30,7 @@ int main()
     int num_packets, num_children, i, j, k;
     cin>>num_children;  //size of group in which chocolates  needs to be distributed
     cin>>num_packets;  //size of array
-    int a[num_packets];
+		vector<int> a(num_packets);
     for (i = 0; i < num_packets; i++)
         cin>>a[i];  //taking input for the quantity of chocolate contained in each packet
     if (min_diff(a, num_packets, num_children) >= 0)

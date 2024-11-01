@@ -75,8 +75,8 @@ int main (){
     cin >> n;
 
     cout << "\nEnter the characters and corresponding count: ";
-    char data[n];
-    int count[n];
+		vector<char> data(n);
+		vector<int> count(n);
     for(int i = 0; i < n; i++)
         cin >> data[i] >> count[i];
     

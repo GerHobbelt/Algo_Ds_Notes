@@ -34,7 +34,7 @@ int main()
     int N;
     cout<<"Enter size of array:"<<endl;
     cin>>N;
-    int arr[N];
+		vector<int> arr(N);
     cout<<"Enter elements of array:"<<endl;
     for (int i = 0; i < N; i++)
         cin>>arr[i];
