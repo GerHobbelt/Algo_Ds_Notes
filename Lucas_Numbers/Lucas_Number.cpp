@@ -10,7 +10,7 @@ is that the first two terms are 2 and 1.
 using namespace std;
 
 int lucas(int n) {
-    int a[n];
+	vector<int> a(n);
     a[0] = 2;
     a[1] = 1;
     for (int i = 2; i < n; i++) {

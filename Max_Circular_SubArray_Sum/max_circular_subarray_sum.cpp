@@ -5,7 +5,8 @@ Case-1 The elements that contribute to the maximum sum are arranged such that no
 Case-2 The elements which contribute to the maximum sum are arranged such that wrapping is there.
 */
 
-#include<iostream>
+#include "generic.h"
+
 using namespace std;
 
 /* Function to find contiguous sub-array with the largest sum

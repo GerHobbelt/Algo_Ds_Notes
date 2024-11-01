@@ -1,6 +1,6 @@
 /*This code is to find the Largest__common_multiple of an given array of elements*/ 
 
-#include <iostream>
+#include "generic.h"
 
 using namespace std;
 

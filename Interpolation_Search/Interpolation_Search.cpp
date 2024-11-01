@@ -1,4 +1,5 @@
-#include <iostream>
+#include "generic.h"
+
 using namespace std;
 
 int interpolation (int arr[100], int n, int val)

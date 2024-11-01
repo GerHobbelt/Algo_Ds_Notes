@@ -17,7 +17,7 @@ using namespace std;
 // Function to calculate the number of ways of making the desired change using the given coins
 int coinChange(int coins[], int m, int value) 
 { 
-    int dp[value + 1];
+	vector<int> dp(value + 1);
     memset(dp, 0, sizeof(dp)); 
 
     // Base case when value is 0

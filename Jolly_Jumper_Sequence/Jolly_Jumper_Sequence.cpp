@@ -11,7 +11,7 @@ Sequence.
 using namespace std;
 
 int Jolly(int a[], int n) {
-    int check[n];
+	vector<int> check(n);
     for (int i = 0; i < n; i++) {
         check[i] = 0;
     }

@@ -7,6 +7,8 @@
 
 #include "generic.h"
 
+#include <queue>
+
 using namespace std;
 
 
@@ -30,8 +32,8 @@ int main() {
 	queue <int> q;
 	q.push(1);
 
-	int d[n + 1];
-	bool inQueue[n + 1];
+	vector<int> d(n + 1);
+	vector<bool> inQueue(n + 1);
 
 	for (int i = 1; i <= n; ++i) {
 		d[i] = INT_MAX;

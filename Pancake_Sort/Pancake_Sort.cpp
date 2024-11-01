@@ -1,5 +1,5 @@
-# include <iostream>
-# include <conio.h>
+#include "generic.h"
+
 using namespace std;
   
 // Reverses the array 

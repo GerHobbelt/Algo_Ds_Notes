@@ -58,7 +58,7 @@ int main()
     cout<<"Enter number of piles:"<<endl;
     cin>>no_of_piles;
     cout<<"Enter number of stones in each pile:"<<endl;
-    lint piles[no_of_piles];
+		vector<lint> piles(no_of_piles);
     for (int i = 0; i < no_of_piles; i++)
         cin>>piles[i];
     lint ans = calculateWinner(starting_player, piles, no_of_piles);

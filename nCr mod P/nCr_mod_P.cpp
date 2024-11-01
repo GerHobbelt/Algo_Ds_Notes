@@ -17,7 +17,7 @@ lint nCr(lint n,lint r,lint mod){
         return -1;
     }
     // We create a pascal triangle.
-    lint Pascal[r+1];
+		vector<lint> Pascal(r+1);
     Pascal[0]=1;
     for(lint i=1;i<=r;i++){
         Pascal[i]=0;

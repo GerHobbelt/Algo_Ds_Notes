@@ -52,8 +52,8 @@ int main()
     int size,i;
     cout <<"Enter the numbers of keys ";
     cin>>size;
-    int keys[size]; 
-    int freq[size];
+		vector<int> keys(size);
+		vector<int> freq(size);
     cout<<"Enter the data elements ";
     for ( i=0;i<size;i++)
        cin>>keys[i];

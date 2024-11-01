@@ -158,7 +158,8 @@ int main()
     cout << "Enter the no. of nodes on Assembly line : ";
     cin >> nodes;
 
-    int inTime[ASSEMBLY_LINES], outTime[ASSEMBLY_LINES], path[nodes + 2];
+		int inTime[ASSEMBLY_LINES], outTime[ASSEMBLY_LINES];
+		vector<int> path(nodes + 2);
     vector<vector<int> > line;
     vector<vector<int> > tTime;
 

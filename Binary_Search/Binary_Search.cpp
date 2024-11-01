@@ -1,4 +1,4 @@
-#include <iostream>
+#include "generic.h"
 
 using namespace std;
 
@@ -70,22 +70,22 @@ int main()
     }
     int desired;
     scanf("%d", &desired);
-    if (binarySearch(array, num, desired) != -1)
+    if (binarySearch(array.data(), num, desired) != -1)
         cout << "Found" << endl;
     else
         cout << "Not Found" << endl;
 
     // Element greater than or equal than 5
-    cout << lowerBound(array, num, 5) << endl;
+    cout << lowerBound(array.data(), num, 5) << endl;
 
     // Element greater than or equal than 6
-    cout << lowerBound(array, num, 6) << endl;
+    cout << lowerBound(array.data(), num, 6) << endl;
 
     // Element greater than 5
-    cout << upperBound(array, num, 5) << endl;
+    cout << upperBound(array.data(), num, 5) << endl;
 
     // Element greater than 0
-    cout << upperBound(array, num, 0) << endl;
+    cout << upperBound(array.data(), num, 0) << endl;
 
     return 0;
 }

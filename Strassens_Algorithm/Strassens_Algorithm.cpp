@@ -1,176 +1,275 @@
-    #include <assert.h>
+#include "generic.h"
 
-    #include <stdio.h>
-
-    #include <stdlib.h>
-
-    #include <time.h>
+#include <time.h>
+#include <assert.h>
 
      
 
-    #define M 2
+#define M 2
 
-    #define N (1<<M)
+#define N (1<<M)
 
      
 
-    typedef double datatype;
+typedef double datatype;
 
-    #define DATATYPE_FORMAT "%4.2g"
+#define DATATYPE_FORMAT "%4.2g"
 
-    typedef datatype mat[N][N]; // mat[2**M,2**M]  for divide and conquer mult.
+typedef datatype mat[N][N]; // mat[2**M,2**M]  for divide and conquer mult.
 
-    typedef struct
+typedef struct
+
+{
+
+        int ra, rb, ca, cb;
+
+} corners; // for tracking rows and columns.
+
+// A[ra..rb][ca..cb] .. the 4 corners of a matrix.
+
+     
+
+// set A[a] = I
+
+void identity(mat A, corners a)
+
+{
+
+    int i, j;
+
+    for (i = a.ra; i < a.rb; i++)
+
+        for (j = a.ca; j < a.cb; j++)
+
+            A[i][j] = (datatype) (i == j);
+
+}
+
+     
+
+// set A[a] = k
+
+void set(mat A, corners a, datatype k)
+
+{
+
+    int i, j;
+
+    for (i = a.ra; i < a.rb; i++)
+
+        for (j = a.ca; j < a.cb; j++)
+
+            A[i][j] = k;
+
+}
+
+     
+
+// set A[a] = [random(l..h)].
+
+void randk(mat A, corners a, double l, double h)
+
+{
+
+    int i, j;
+
+    for (i = a.ra; i < a.rb; i++)
+
+        for (j = a.ca; j < a.cb; j++)
+
+            A[i][j] = (datatype) (l + (h - l) * (rand() / (double) RAND_MAX));
+
+}
+
+     
+
+// Print A[a]
+
+void print(mat A, corners a, const char *name)
+
+{
+
+    int i, j;
+
+    printf("%s = {\n", name);
+
+    for (i = a.ra; i < a.rb; i++)
 
     {
 
-            int ra, rb, ca, cb;
+        for (j = a.ca; j < a.cb; j++)
 
-    } corners; // for tracking rows and columns.
+            printf(DATATYPE_FORMAT ", ", A[i][j]);
 
-    // A[ra..rb][ca..cb] .. the 4 corners of a matrix.
-
-     
-
-    // set A[a] = I
-
-    void identity(mat A, corners a)
-
-    {
-
-        int i, j;
-
-        for (i = a.ra; i < a.rb; i++)
-
-            for (j = a.ca; j < a.cb; j++)
-
-                A[i][j] = (datatype) (i == j);
+        printf("\n");
 
     }
 
-     
+    printf("}\n");
 
-    // set A[a] = k
-
-    void set(mat A, corners a, datatype k)
-
-    {
-
-        int i, j;
-
-        for (i = a.ra; i < a.rb; i++)
-
-            for (j = a.ca; j < a.cb; j++)
-
-                A[i][j] = k;
-
-    }
+}
 
      
 
-    // set A[a] = [random(l..h)].
+// C[c] = A[a] + B[b]
 
-    void randk(mat A, corners a, double l, double h)
+void add(mat A, mat B, mat C, corners a, corners b, corners c)
 
-    {
+{
 
-        int i, j;
+    int rd = a.rb - a.ra;
 
-        for (i = a.ra; i < a.rb; i++)
+    int cd = a.cb - a.ca;
 
-            for (j = a.ca; j < a.cb; j++)
+    int i, j;
 
-                A[i][j] = (datatype) (l + (h - l) * (rand() / (double) RAND_MAX));
-
-    }
-
-     
-
-    // Print A[a]
-
-    void print(mat A, corners a, char *name)
+    for (i = 0; i < rd; i++)
 
     {
 
-        int i, j;
-
-        printf("%s = {\n", name);
-
-        for (i = a.ra; i < a.rb; i++)
+        for (j = 0; j < cd; j++)
 
         {
 
-            for (j = a.ca; j < a.cb; j++)
+            C[i + c.ra][j + c.ca] = A[i + a.ra][j + a.ca] + B[i + b.ra][j
 
-                printf(DATATYPE_FORMAT ", ", A[i][j]);
-
-            printf("\n");
-
-        }
-
-        printf("}\n");
-
-    }
-
-     
-
-    // C[c] = A[a] + B[b]
-
-    void add(mat A, mat B, mat C, corners a, corners b, corners c)
-
-    {
-
-        int rd = a.rb - a.ra;
-
-        int cd = a.cb - a.ca;
-
-        int i, j;
-
-        for (i = 0; i < rd; i++)
-
-        {
-
-            for (j = 0; j < cd; j++)
-
-            {
-
-                C[i + c.ra][j + c.ca] = A[i + a.ra][j + a.ca] + B[i + b.ra][j
-
-                        + b.ca];
-
-            }
+                    + b.ca];
 
         }
 
     }
 
+}
+
      
 
-    // C[c] = A[a] - B[b]
+// C[c] = A[a] - B[b]
 
-    void sub(mat A, mat B, mat C, corners a, corners b, corners c)
+void sub(mat A, mat B, mat C, corners a, corners b, corners c)
+
+{
+
+    int rd = a.rb - a.ra;
+
+    int cd = a.cb - a.ca;
+
+    int i, j;
+
+    for (i = 0; i < rd; i++)
 
     {
 
-        int rd = a.rb - a.ra;
-
-        int cd = a.cb - a.ca;
-
-        int i, j;
-
-        for (i = 0; i < rd; i++)
+        for (j = 0; j < cd; j++)
 
         {
 
-            for (j = 0; j < cd; j++)
+            C[i + c.ra][j + c.ca] = A[i + a.ra][j + a.ca] - B[i + b.ra][j
 
-            {
+                    + b.ca];
 
-                C[i + c.ra][j + c.ca] = A[i + a.ra][j + a.ca] - B[i + b.ra][j
+        }
 
-                        + b.ca];
+    }
 
-            }
+}
+
+     
+
+// Return 1/4 of the matrix: top/bottom , left/right.
+
+void find_corner(corners a, int i, int j, corners *b)
+
+{
+
+    int rm = a.ra + (a.rb - a.ra) / 2;
+
+    int cm = a.ca + (a.cb - a.ca) / 2;
+
+    *b = a;
+
+    if (i == 0)
+
+        b->rb = rm; // top rows
+
+    else
+
+        b->ra = rm; // bot rows
+
+    if (j == 0)
+
+        b->cb = cm; // left cols
+
+    else
+
+        b->ca = cm; // right cols
+
+}
+
+     
+
+// Multiply: A[a] * B[b] => C[c], recursively.
+
+void mul(mat A, mat B, mat C, corners a, corners b, corners c)
+
+{
+
+    corners aii[2][2], bii[2][2], cii[2][2], p;
+
+    mat P[7], S, T;
+
+    int i, j, m, n, k;
+
+     
+
+    // Check: A[m n] * B[n k] = C[m k]
+
+    m = a.rb - a.ra;
+
+    assert(m==(c.rb-c.ra));
+
+    n = a.cb - a.ca;
+
+    assert(n==(b.rb-b.ra));
+
+    k = b.cb - b.ca;
+
+    assert(k==(c.cb-c.ca));
+
+    assert(m>0);
+
+     
+
+    if (n == 1)
+
+    {
+
+        C[c.ra][c.ca] += A[a.ra][a.ca] * B[b.ra][b.ca];
+
+        return;
+
+    }
+
+     
+
+    // Create the 12 smaller matrix indexes:
+
+    //  A00 A01   B00 B01   C00 C01
+
+    //  A10 A11   B10 B11   C10 C11
+
+    for (i = 0; i < 2; i++)
+
+    {
+
+        for (j = 0; j < 2; j++)
+
+        {
+
+            find_corner(a, i, j, &aii[i][j]);
+
+            find_corner(b, i, j, &bii[i][j]);
+
+            find_corner(c, i, j, &cii[i][j]);
 
         }
 
@@ -178,274 +277,173 @@
 
      
 
-    // Return 1/4 of the matrix: top/bottom , left/right.
+    p.ra = p.ca = 0;
 
-    void find_corner(corners a, int i, int j, corners *b)
-
-    {
-
-        int rm = a.ra + (a.rb - a.ra) / 2;
-
-        int cm = a.ca + (a.cb - a.ca) / 2;
-
-        *b = a;
-
-        if (i == 0)
-
-            b->rb = rm; // top rows
-
-        else
-
-            b->ra = rm; // bot rows
-
-        if (j == 0)
-
-            b->cb = cm; // left cols
-
-        else
-
-            b->ca = cm; // right cols
-
-    }
+    p.rb = p.cb = m / 2;
 
      
 
-    // Multiply: A[a] * B[b] => C[c], recursively.
+#define LEN(A) (sizeof(A)/sizeof(A[0]))
 
-    void mul(mat A, mat B, mat C, corners a, corners b, corners c)
+    for (i = 0; i < LEN(P); i++)
 
-    {
-
-        corners aii[2][2], bii[2][2], cii[2][2], p;
-
-        mat P[7], S, T;
-
-        int i, j, m, n, k;
+        set(P[i], p, 0);
 
      
 
-        // Check: A[m n] * B[n k] = C[m k]
-
-        m = a.rb - a.ra;
-
-        assert(m==(c.rb-c.ra));
-
-        n = a.cb - a.ca;
-
-        assert(n==(b.rb-b.ra));
-
-        k = b.cb - b.ca;
-
-        assert(k==(c.cb-c.ca));
-
-        assert(m>0);
+#define ST0 set(S,p,0); set(T,p,0)
 
      
 
-        if (n == 1)
+    // (A00 + A11) * (B00+B11) = S * T = P0
 
-        {
+    ST0;
 
-            C[c.ra][c.ca] += A[a.ra][a.ca] * B[b.ra][b.ca];
+    add(A, A, S, aii[0][0], aii[1][1], p);
 
-            return;
+    add(B, B, T, bii[0][0], bii[1][1], p);
 
-        }
-
-     
-
-        // Create the 12 smaller matrix indexes:
-
-        //  A00 A01   B00 B01   C00 C01
-
-        //  A10 A11   B10 B11   C10 C11
-
-        for (i = 0; i < 2; i++)
-
-        {
-
-            for (j = 0; j < 2; j++)
-
-            {
-
-                find_corner(a, i, j, &aii[i][j]);
-
-                find_corner(b, i, j, &bii[i][j]);
-
-                find_corner(c, i, j, &cii[i][j]);
-
-            }
-
-        }
+    mul(S, T, P[0], p, p, p);
 
      
 
-        p.ra = p.ca = 0;
+    // (A10 + A11) * B00 = S * B00 = P1
 
-        p.rb = p.cb = m / 2;
+    ST0;
 
-     
+    add(A, A, S, aii[1][0], aii[1][1], p);
 
-    #define LEN(A) (sizeof(A)/sizeof(A[0]))
-
-        for (i = 0; i < LEN(P); i++)
-
-            set(P[i], p, 0);
+    mul(S, B, P[1], p, bii[0][0], p);
 
      
 
-    #define ST0 set(S,p,0); set(T,p,0)
+    // A00 * (B01 - B11) = A00 * T = P2
+
+    ST0;
+
+    sub(B, B, T, bii[0][1], bii[1][1], p);
+
+    mul(A, T, P[2], aii[0][0], p, p);
 
      
 
-        // (A00 + A11) * (B00+B11) = S * T = P0
+    // A11 * (B10 - B00) = A11 * T = P3
 
-        ST0;
+    ST0;
 
-        add(A, A, S, aii[0][0], aii[1][1], p);
+    sub(B, B, T, bii[1][0], bii[0][0], p);
 
-        add(B, B, T, bii[0][0], bii[1][1], p);
-
-        mul(S, T, P[0], p, p, p);
+    mul(A, T, P[3], aii[1][1], p, p);
 
      
 
-        // (A10 + A11) * B00 = S * B00 = P1
+    // (A00 + A01) * B11 = S * B11 = P4
 
-        ST0;
+    ST0;
 
-        add(A, A, S, aii[1][0], aii[1][1], p);
+    add(A, A, S, aii[0][0], aii[0][1], p);
 
-        mul(S, B, P[1], p, bii[0][0], p);
-
-     
-
-        // A00 * (B01 - B11) = A00 * T = P2
-
-        ST0;
-
-        sub(B, B, T, bii[0][1], bii[1][1], p);
-
-        mul(A, T, P[2], aii[0][0], p, p);
+    mul(S, B, P[4], p, bii[1][1], p);
 
      
 
-        // A11 * (B10 - B00) = A11 * T = P3
+    // (A10 - A00) * (B00 + B01) = S * T = P5
 
-        ST0;
+    ST0;
 
-        sub(B, B, T, bii[1][0], bii[0][0], p);
+    sub(A, A, S, aii[1][0], aii[0][0], p);
 
-        mul(A, T, P[3], aii[1][1], p, p);
+    add(B, B, T, bii[0][0], bii[0][1], p);
 
-     
-
-        // (A00 + A01) * B11 = S * B11 = P4
-
-        ST0;
-
-        add(A, A, S, aii[0][0], aii[0][1], p);
-
-        mul(S, B, P[4], p, bii[1][1], p);
+    mul(S, T, P[5], p, p, p);
 
      
 
-        // (A10 - A00) * (B00 + B01) = S * T = P5
+    // (A01 - A11) * (B10 + B11) = S * T = P6
 
-        ST0;
+    ST0;
 
-        sub(A, A, S, aii[1][0], aii[0][0], p);
+    sub(A, A, S, aii[0][1], aii[1][1], p);
 
-        add(B, B, T, bii[0][0], bii[0][1], p);
+    add(B, B, T, bii[1][0], bii[1][1], p);
 
-        mul(S, T, P[5], p, p, p);
-
-     
-
-        // (A01 - A11) * (B10 + B11) = S * T = P6
-
-        ST0;
-
-        sub(A, A, S, aii[0][1], aii[1][1], p);
-
-        add(B, B, T, bii[1][0], bii[1][1], p);
-
-        mul(S, T, P[6], p, p, p);
+    mul(S, T, P[6], p, p, p);
 
      
 
-        // P0 + P3 - P4 + P6 = S - P4 + P6 = T + P6 = C00
+    // P0 + P3 - P4 + P6 = S - P4 + P6 = T + P6 = C00
 
-        add(P[0], P[3], S, p, p, p);
+    add(P[0], P[3], S, p, p, p);
 
-        sub(S, P[4], T, p, p, p);
+    sub(S, P[4], T, p, p, p);
 
-        add(T, P[6], C, p, p, cii[0][0]);
-
-     
-
-        // P2 + P4 = C01
-
-        add(P[2], P[4], C, p, p, cii[0][1]);
+    add(T, P[6], C, p, p, cii[0][0]);
 
      
 
-        // P1 + P3 = C10
+    // P2 + P4 = C01
 
-        add(P[1], P[3], C, p, p, cii[1][0]);
-
-     
-
-        // P0 + P2 - P1 + P5 = S - P1 + P5 = T + P5 = C11
-
-        add(P[0], P[2], S, p, p, p);
-
-        sub(S, P[1], T, p, p, p);
-
-        add(T, P[5], C, p, p, cii[1][1]);
+    add(P[2], P[4], C, p, p, cii[0][1]);
 
      
 
-    }
+    // P1 + P3 = C10
 
-    int main()
+    add(P[1], P[3], C, p, p, cii[1][0]);
 
-    {
+     
 
-        mat A, B, C;
+    // P0 + P2 - P1 + P5 = S - P1 + P5 = T + P5 = C11
 
-        corners ai = { 0, N, 0, N };
+    add(P[0], P[2], S, p, p, p);
 
-        corners bi = { 0, N, 0, N };
+    sub(S, P[1], T, p, p, p);
 
-        corners ci = { 0, N, 0, N };
+    add(T, P[5], C, p, p, cii[1][1]);
 
-        srand(time(0));
+     
 
-        // identity(A,bi); identity(B,bi);
+}
 
-        // set(A,ai,2); set(B,bi,2);
+int main()
 
-        randk(A, ai, 0, 2);
+{
 
-        randk(B, bi, 0, 2);
+    mat A, B, C;
 
-        print(A, ai, "A");
+    corners ai = { 0, N, 0, N };
 
-        print(B, bi, "B");
+    corners bi = { 0, N, 0, N };
 
-        set(C, ci, 0);
+    corners ci = { 0, N, 0, N };
 
-        // add(A,B,C, ai, bi, ci);
+    srand(time(0));
 
-        mul(A, B, C, ai, bi, ci);
+    // identity(A,bi); identity(B,bi);
 
-        print(C, ci, "C");
+    // set(A,ai,2); set(B,bi,2);
 
-        return 0;
+    randk(A, ai, 0, 2);
 
-    }
+    randk(B, bi, 0, 2);
 
+    print(A, ai, "A");
+
+    print(B, bi, "B");
+
+    set(C, ci, 0);
+
+    // add(A,B,C, ai, bi, ci);
+
+    mul(A, B, C, ai, bi, ci);
+
+    print(C, ci, "C");
+
+    return 0;
+
+}
+
+/*
 Output:
 
 $ g++ StrassenMulitplication.cpp
@@ -469,3 +467,4 @@ C = {
  5.3,  6.7,  3.6,  2.2, 
  2.5,  3.5,  1.6,  2.1, 
 }
+*/

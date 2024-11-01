@@ -1,6 +1,8 @@
 // Including Library
 #include "generic.h"
 
+#include <stack>
+
 using namespace std;
 
 /** Function to check if given character is

@@ -1,5 +1,5 @@
-#include<iostream>
-#include<cmath> //to use sqrt()
+#include "generic.h"
+
 using namespace std;
 
 int jump_search(int a[], int n, int key)

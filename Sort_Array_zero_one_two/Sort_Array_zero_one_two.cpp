@@ -1,8 +1,8 @@
 /*Given an array A[] consisting 0s, 1s and 2s. The task is to write a function that sorts the given array. 
 The function puts all 0s first, then all 1s and all 2s in last.*/
 
-#include<stdlib.h>
-#include<iostream>
+#include "generic.h"
+
 using namespace std;
 
 void sort_zero_one_two(int a[],int n)

@@ -71,7 +71,7 @@ void Dijkstra(vector <pair<int, int> >adj[],int src,int v)
 int main(int argc, char const *argv[])
 {
 	int v = 9;
-	vector <pair <int, int> >adj[v];
+	vector <pair <int, int> > adj[v];
 
 	/* 
 		Using array of vectors to represent vertices.

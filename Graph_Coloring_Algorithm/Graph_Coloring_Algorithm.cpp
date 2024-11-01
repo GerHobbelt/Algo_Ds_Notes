@@ -1,8 +1,8 @@
 // C++ program for graph coloring algorithm
 
-#include <iostream> 
-#include <list> 
-using namespace std; 
+#include "generic.h"
+
+using namespace std;
 
 // A class for an undirected graph 
 class Graph 

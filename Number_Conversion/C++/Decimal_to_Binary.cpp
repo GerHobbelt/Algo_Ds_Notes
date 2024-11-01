@@ -1,8 +1,8 @@
 
 // C++ program to convert numbers from decimal to binary form
 
-#include <iostream>
-#include <math.h>
+#include "generic.h"
+
 using namespace std;
 
 // Function to convert the number from decimal to binary form

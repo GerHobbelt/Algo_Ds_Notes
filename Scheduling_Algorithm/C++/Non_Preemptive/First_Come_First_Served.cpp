@@ -7,8 +7,9 @@ Burst Time:Time required by a process for CPU execution.
 Turn Around Time:Time Difference between completion time and arrival time.          
 Waiting Time(W.T):Time Difference between turn around time and burst time. */
 
-#include<iostream> 
-using namespace std;  
+#include "generic.h"
+
+using namespace std;
 
 void WaitingTime (int processes[], int n , int bt[], int wt[]); 
 void TurnAroundTime ( int processes[], int n,int bt[], int wt[], int tat[]); 
@@ -50,7 +51,8 @@ void TurnAroundTime( int processes[], int n,int bt[], int wt[], int tat[])
  
 void avgTime( int processes[], int n, int bt[]) 
 { 
-    int wt[n], tat[n], total_wt = 0, total_tat = 0; 
+	vector<int> wt(n), tat(n);
+	int total_wt = 0, total_tat = 0;
     
     WaitingTime(processes, n, bt, wt); 
     TurnAroundTime(processes, n, bt, wt, tat); 

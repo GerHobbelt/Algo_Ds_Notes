@@ -2,7 +2,7 @@
 CELEBRITY PROBLEM
 
 In a group of N people, there is 1 person, who is known to everyone, but
-he knows noone.
+he knows no-one.
 We need to find such a person, if present.
 
 There will be a matrix input, such that M[i][j] = 1, if ith person

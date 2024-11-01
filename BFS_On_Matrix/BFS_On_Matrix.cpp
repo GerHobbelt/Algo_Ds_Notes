@@ -62,7 +62,7 @@ int findDistance(int row, int col, int mat[][5])
         // Remove the cell from queue
         q.pop();
 
-        // If move towards left is allowed or it is the destnation cell
+        // If move towards left is allowed or it is the destination cell
         if (y - 1 >= 0 && (mat[x][y - 1] == 1 || mat[x][y - 1] == 3)) 
         {
             // if distance to reach the cell to the left is less than the computed previous path distance, update it

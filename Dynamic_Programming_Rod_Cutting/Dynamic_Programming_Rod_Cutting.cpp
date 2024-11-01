@@ -1,6 +1,5 @@
 // A Dynamic programming solution for Rod Cutting problem
-#include <iostream>
-#include <limits.h>
+#include "generic.h"
 
 using namespace std;
 

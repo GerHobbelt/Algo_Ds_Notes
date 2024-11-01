@@ -1,6 +1,7 @@
 // Count inversion using merge sort
 
-#include <iostream>
+#include "generic.h"
+
 using namespace std;
 
 //merge two sorted arrays such that resultant array is also sorted
