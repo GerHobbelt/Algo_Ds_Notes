@@ -1,5 +1,5 @@
-#include<iostream> 
-#include<stdio.h> 
+#include "generic.h" 
+
 using namespace std; 
 
 // multiply single bits of strings a and b 

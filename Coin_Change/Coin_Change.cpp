@@ -37,7 +37,8 @@ int main()
     int m;
     cout << "Enter number of coins" << endl;
     cin >> m;
-    int coins[m], value;
+		vector<int> coins(m);
+    int value;
     cout << "Enter denominations of coins" << endl;
     for (int i = 0; i < m; i++)
         cin >> coins[i];

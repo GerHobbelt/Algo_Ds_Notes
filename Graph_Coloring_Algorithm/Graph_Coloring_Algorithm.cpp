@@ -2,6 +2,8 @@
 
 #include "generic.h"
 
+#include <list>
+
 using namespace std;
 
 // A class for an undirected graph 
